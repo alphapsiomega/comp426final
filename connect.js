@@ -1,4 +1,4 @@
-//import { rootCertificates } from "tls";
+/import { rootCertificates } from "tls";
 
 //This will have the stuff that is.. the app. This will be the most complicated and we're probably
 //gonna have to reference the render file for a09 or something
@@ -10,7 +10,6 @@ const $root = $('#root');
 export async function renderPage() {
 
     let appBox = `
-
         <div class="container has-text-centered is-connect-box" id="appBox">
             <div id="replace">
             <button type="button" class="button is-warning is-center" id="open">Welcome to Alpha Psi Omega Connect</button>
@@ -27,7 +26,6 @@ export async function renderPage() {
 export async function handleWelcomeButtonPress(event) {
 
     let r = `
-
     <div class="container is-connect-box2" id="appBox">
 <<<<<<< HEAD
         <div>
@@ -57,7 +55,6 @@ export async function handleWelcomeButtonPress(event) {
         
         
     `;
-
     for(let i=0; i<50; i++){
         //alert("good lord");
         r+=`
@@ -66,32 +63,19 @@ export async function handleWelcomeButtonPress(event) {
             </div>
             `;
     }
-
     r+=`</div>`
-
 >>>>>>> c3f10f8c5361d7a8f620d3d8ad4ff622bafd5165
     $('#appBox').replaceWith(r);
-
 }
-
 //render search bar ??
-
 function renderSearchBar() {
-
 }
-
 //this will render the list of profiles/people in the theatre community
 function renderList() {
-
 }
-
 //represents the section that holds each member's primary skills/experience/interests
 function renderMemberCard() {
-
 }
-
 $(function () {
-
     renderPage();
-
 });
