@@ -49,7 +49,7 @@ export async function handleWelcomeButtonPress(event) {
         //alert("good lord");
         r+=`
             <div class="container is-profile-card">
-                Michael Sparks
+                <img class="is-profile-pic" src="OldWell.png"> Michael Sparks
             </div>
             `;
     }

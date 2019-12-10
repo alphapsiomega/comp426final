@@ -99,3 +99,11 @@ img:hover {
 
 }
 
+.is-profile-pic {
+
+    border: 1px solid;
+    border-radius: 40%;
+    width: 100px;
+
+}
+
