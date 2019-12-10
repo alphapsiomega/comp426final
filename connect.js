@@ -29,11 +29,7 @@ export async function handleWelcomeButtonPress(event) {
     let r = `
 
     <div class="container is-connect-box2" id="appBox">
-<<<<<<< HEAD
         <div>
-=======
-        <div class="is-top-bar">
->>>>>>> c3f10f8c5361d7a8f620d3d8ad4ff622bafd5165
             <form>
             <select>
                 <option value="any">Any</option>
@@ -42,15 +38,6 @@ export async function handleWelcomeButtonPress(event) {
                 <option value="producers">Producers</option>
             </select>
             <input type="search" placeholder="Search..">
-<<<<<<< HEAD
-            <button type="submit" class="button is-warning" id="submit">Search</button>
-            </form>
-        </div>
-        </div>
-        
-    `;
-
-=======
             <button type="submit" class="button is-white" id="submit">Search</button>
             </form>
         </div>
@@ -62,14 +49,13 @@ export async function handleWelcomeButtonPress(event) {
         //alert("good lord");
         r+=`
             <div class="container is-profile-card">
-                Michael Sparks
+                <img class="is-profile-pic" src="OldWell.png"> Michael Sparks
             </div>
             `;
     }
 
     r+=`</div>`
 
->>>>>>> c3f10f8c5361d7a8f620d3d8ad4ff622bafd5165
     $('#appBox').replaceWith(r);
 
 }
