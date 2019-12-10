@@ -27,7 +27,7 @@ export async function handleWelcomeButtonPress(event) {
 
     let r = `
     <div class="container is-connect-box2" id="appBox">
-<<<<<<< HEAD
+
         <div>
 
         <div class="is-top-bar">
