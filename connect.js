@@ -39,9 +39,14 @@ export async function handleWelcomeButtonPress(event) {
                 <option value="directors">Directors</option>
                 <option value="producers">Producers</option>
             </select>
-            <input type="search" placeholder="Search..">
-
-            <button type="submit" class="button is-warning" id="submit">Search</button>
+            <div class="field">
+                            <div class="control" style="padding: 20px">
+                                    <input class="input is-rounded" type="text" placeholder="Search Companies">
+                            </div>
+                </div>
+            <div style="padding-bottom: 10px">
+                <button type="submit" class="button is-white is-centered" id="submit">Search</button>
+            </div
             </form>
         </div>
         </div>
@@ -51,8 +56,30 @@ export async function handleWelcomeButtonPress(event) {
     for(let i=0; i<50; i++){
         //alert("good lord");
         r+=`
-            <div class="container is-profile-card">
-                <img class="is-profile-pic" width="50" height="50" src="OldWell.png"> Twig Man
+            <div class="is-profile-card">
+            <div class="columns">
+                <div class="column">
+                        <img class="is-profile-pic" width="50" height="50" src="OldWell.png">
+                </div>
+                <div class="column">
+                    Twig Man</br>
+                    <span style:"color: #F8DA17">Senior</span>
+                </div>
+                <div class="column">
+                    Director</br>
+                    Experienced
+                </div>
+                <div class="column">
+                    Actor</br>
+                    Interested
+                </div>
+                <div class="column">
+                    Producer</br>
+                    Competent
+                </div>
+                <div class="column">
+                </div>
+            </div>
             </div>
             `;
     }
