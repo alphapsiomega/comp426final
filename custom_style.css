@@ -33,7 +33,7 @@ hr{
     font-weight: lighter !important;
     color: #110C5D;
 }
-img {
+img.is-home {
     height: 300px !important;
     width: 300px !important;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -77,7 +77,10 @@ img:hover {
     border: solid;
     border-color: #F8DA17;
     background-color: #003365;
+<<<<<<< HEAD
     padding-bottom: 290px;
+=======
+>>>>>>> 1b47198368778ca700ef1a69fcb7eef05fc1b9da
 
 }
 
@@ -100,11 +103,12 @@ img:hover {
 
 }
 
-.is-profile-pic {
+img.is-profile-pic {
 
     border: 1px solid;
     border-radius: 40%;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 
 }
 
