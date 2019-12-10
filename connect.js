@@ -1,4 +1,4 @@
-/import { rootCertificates } from "tls";
+//import { rootCertificates } from "tls";
 
 //This will have the stuff that is.. the app. This will be the most complicated and we're probably
 //gonna have to reference the render file for a09 or something
@@ -48,13 +48,6 @@ export async function handleWelcomeButtonPress(event) {
         
     `;
 
-
-            <button type="submit" class="button is-white" id="submit">Search</button>
-            </form>
-        </div>
-        
-        
-    `;
     for(let i=0; i<50; i++){
         //alert("good lord");
         r+=`
