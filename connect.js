@@ -10,7 +10,6 @@ const $root = $('#root');
 export async function renderPage() {
 
     let appBox = `
-
         <div class="container has-text-centered is-connect-box" id="appBox">
             <div id="replace">
             <button type="button" class="button is-warning is-center" id="open">Welcome to Alpha Psi Omega Connect</button>
@@ -27,9 +26,12 @@ export async function renderPage() {
 export async function handleWelcomeButtonPress(event) {
 
     let r = `
-
     <div class="container is-connect-box2" id="appBox">
+
         <div>
+
+        <div class="is-top-bar">
+
             <form>
             <select>
                 <option value="any">Any</option>
@@ -38,10 +40,11 @@ export async function handleWelcomeButtonPress(event) {
                 <option value="producers">Producers</option>
             </select>
             <input type="search" placeholder="Search..">
-            <button type="submit" class="button is-white" id="submit">Search</button>
+
+            <button type="submit" class="button is-warning" id="submit">Search</button>
             </form>
         </div>
-        
+        </div>
         
     `;
 
@@ -49,35 +52,23 @@ export async function handleWelcomeButtonPress(event) {
         //alert("good lord");
         r+=`
             <div class="container is-profile-card">
-                <img class="is-profile-pic" src="OldWell.png"> Michael Sparks
+                <img class="is-profile-pic" width="50" height="50" src="OldWell.png"> Twig Man
             </div>
             `;
     }
-
     r+=`</div>`
 
     $('#appBox').replaceWith(r);
-
 }
-
 //render search bar ??
-
 function renderSearchBar() {
-
 }
-
 //this will render the list of profiles/people in the theatre community
 function renderList() {
-
 }
-
 //represents the section that holds each member's primary skills/experience/interests
 function renderMemberCard() {
-
 }
-
 $(function () {
-
     renderPage();
-
 });
