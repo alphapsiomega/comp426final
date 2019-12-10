@@ -33,7 +33,7 @@ hr{
     font-weight: lighter !important;
     color: #110C5D;
 }
-img {
+img.is-home {
     height: 300px !important;
     width: 300px !important;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -99,7 +99,7 @@ img:hover {
 
 }
 
-.is-profile-pic {
+img.is-profile-pic {
 
     border: 1px solid;
     border-radius: 40%;
