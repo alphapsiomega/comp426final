@@ -29,7 +29,7 @@ export async function handleWelcomeButtonPress(event) {
     let r = `
 
     <div class="container is-connect-box2" id="appBox">
-        <div>
+        <div class="is-top-bar">
             <form>
             <select>
                 <option value="any">Any</option>
@@ -38,12 +38,23 @@ export async function handleWelcomeButtonPress(event) {
                 <option value="producers">Producers</option>
             </select>
             <input type="search" placeholder="Search..">
-            <button type="submit" class="button is-warning" id="submit">Search</button>
+            <button type="submit" class="button is-white" id="submit">Search</button>
             </form>
         </div>
-        </div>
+        
         
     `;
+
+    for(let i=0; i<50; i++){
+        //alert("good lord");
+        r+=`
+            <div class="container is-profile-card">
+                Michael Sparks
+            </div>
+            `;
+    }
+
+    r+=`</div>`
 
     $('#appBox').replaceWith(r);
 

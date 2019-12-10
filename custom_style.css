@@ -77,7 +77,25 @@ img:hover {
     border: solid;
     border-color: #F8DA17;
     background-color: #003365;
-    padding-bottom: 290px;
+
+}
+
+.is-top-bar {
+
+    text-align: right;
+    background-color: #F8DA17;
+
+}
+
+.is-profile-card {
+
+    color: white;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: solid;
+    border-color: #F8DA17;
+    border-width: 1px;
 
 }
 
