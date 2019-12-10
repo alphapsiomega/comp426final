@@ -47,3 +47,24 @@ img:hover {
     transform: scale(1.05);
 }
 
+.is-center-of-page {
+
+    top: 50%;
+    left: 50%;
+
+}
+
+.is-apo-background {
+
+    background-color: #003365;
+
+}
+
+.is-connect-box {
+
+    border: solid;
+    border-color: #F8DA17;
+    background-color: #003365;
+
+}
+
