@@ -62,9 +62,22 @@ img:hover {
 
 .is-connect-box {
 
+    position: fixed;
     border: solid;
     border-color: #F8DA17;
     background-color: #003365;
+    padding-top: 290px;
+    padding-bottom: 290px;
+
+}
+
+.is-connect-box2 {
+
+    position: fixed;
+    border: solid;
+    border-color: #F8DA17;
+    background-color: #003365;
+    padding-bottom: 290px;
 
 }
 

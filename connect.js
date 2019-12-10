@@ -12,7 +12,9 @@ export async function renderPage() {
     let appBox = `
 
         <div class="container has-text-centered is-connect-box" id="appBox">
+            <div id="replace">
             <button type="button" class="button is-warning is-center" id="open">Welcome to Alpha Psi Omega Connect</button>
+            </div>
         </div>
     
     `;
@@ -24,7 +26,26 @@ export async function renderPage() {
 
 export async function handleWelcomeButtonPress(event) {
 
-    
+    let r = `
+
+    <div class="container is-connect-box2" id="appBox">
+        <div>
+            <form>
+            <select>
+                <option value="any">Any</option>
+                <option value="actors">Actors</option>
+                <option value="directors">Directors</option>
+                <option value="producers">Producers</option>
+            </select>
+            <input type="search" placeholder="Search..">
+            <button type="submit" class="button is-warning" id="submit">Search</button>
+            </form>
+        </div>
+        </div>
+        
+    `;
+
+    $('#appBox').replaceWith(r);
 
 }
 
