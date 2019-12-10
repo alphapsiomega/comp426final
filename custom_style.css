@@ -77,9 +77,6 @@ img:hover {
     border: solid;
     border-color: #F8DA17;
     background-color: #003365;
-<<<<<<< HEAD
-    padding-bottom: 290px;
-=======
 
 }
 
@@ -99,7 +96,6 @@ img:hover {
     border: solid;
     border-color: #F8DA17;
     border-width: 1px;
->>>>>>> c3f10f8c5361d7a8f620d3d8ad4ff622bafd5165
 
 }
 
@@ -107,7 +103,8 @@ img:hover {
 
     border: 1px solid;
     border-radius: 40%;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 
 }
 
