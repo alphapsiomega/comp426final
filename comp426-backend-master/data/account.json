@@ -1,2 +1,28 @@
 {
+  "users": {
+    "undefined": {
+      "passwordHash": "$2a$10$mQwTZ7KPJODwrisVKKteROoSSFubY9/iIfl0PgKppau6eAYUrA2Sm"
+    },
+    "justbea@live": {
+      "unc": {
+        "edu": {
+          "passwordHash": "$2a$10$8wlVB5JstF.bj5HVzl54FemcikGwypHxE2KQ/zNnHClEnQkJqQG8y"
+        }
+      }
+    },
+    "ljenloe": {
+      "passwordHash": "$2a$10$EqjYeNM4Oeo.dnmZel07cOgjnb.tseMx1kJLg9/Nqzbf.35eGN7AK",
+      "data": {
+        "fname": "ljenloe",
+        "lname": "renis"
+      }
+    },
+    "stuartmj": {
+      "passwordHash": "$2a$10$CffaO8X7ejSrT5u16u4aXe8EjrxX4l4DiFAYe35zRgHO0BDnwYP.6",
+      "data": {
+        "fname": "stuartmj",
+        "lname": "evankrell"
+      }
+    }
+  }
 }

@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from 'react';
-//import logo from './logo.svg';
 import './App.scss';
 import Login from "./components/account/Login";
 import CreateAccount from "./components/account/CreateAccount";
 import CheckJwt from "./components/account/CheckJWT";
-import ShowTodos from "./components/todo/ShowTodos";
 import Logout from "./components/account/Logout";
 import {getStatus} from "./api/account/Account";
 
@@ -21,7 +19,7 @@ function App() {
     })();
   }, []);
 
-  if (loggedIn === 'checking') return <div className="App">Checking if logged in</div>;
+  if (loggedIn === 'checking') return <div>Checking if logged in</div>;
 
   return (
     <div className="App content">
@@ -39,7 +37,6 @@ function App() {
       <br/>
       <CheckJwt/>
       <hr/>
-      <ShowTodos/>
     </div>
   );
 }
