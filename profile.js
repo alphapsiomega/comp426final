@@ -1,9 +1,7 @@
-export const renderLogInForm = function () {
+export const renderForms = function () {
     const $root = $('#root'); // root is whatever has root as the ID
 
-    const signInForm = 
-
-
+    const forms = 
     `
     <div id="login">
             <div class="login-card">
@@ -30,54 +28,58 @@ export const renderLogInForm = function () {
                     </form>
                 </div>
             </div>
-        </div>
-`
 
-$root.append(signInForm);
-$('#logIn').on("click", null, null, handleSubmitLogIn );
-}
-
-
-
-export const renderSignUpForm = async function (event) {
-    const $root = $('#root'); // root is whatever has root as the ID
-
-    const signInForm = 
-
-
-    `
-    <div id="login">
             <div class="login-card">
-                <div class="card-title">
-                    <h1>Alpha Psi Omega Sign Up</h1>
-                </div>
+            <div class="card-title">
+                <h1>Alpha Psi Omega Sign Up</h1>
+            </div>
 
-                <div class="content">
-                    <form id="login-form">
-                        <input id="emailSignUp" type="email" name="email" title="email" placeholder="Email" required autofocus>
-                        <input id="passwordSignUp" type="password" name="password" title="password" placeholder="Password" required>
-                        <input id="reEnterPasswordSignUp" type="password" name="password" title="password" placeholder="Re-Enter Password" required>
-                        <div class="field">
-                            <div class="control">
-                                <button type="submit" id = "signUp" class="btn btn-primary">Sign Up</button>
-                            </div>
+            <div class="content">
+                <form id="login-form">
+                <input id="fNameSignUp" type="email" name="email" title="email" placeholder="First Name" required autofocus>
+                <input id="fNameignUp" type="email" name="email" title="email" placeholder="Last Name" required autofocus>
+                    <input id="emailSignUp" type="email" name="email" title="email" placeholder="Email" required autofocus>
+                    <input id="passwordSignUp" type="password" name="password" title="password" placeholder="Password" required>
+                    
+                    <div class="field">
+                        <div class="control">
+                            <button type="submit" id = "signUp" class="btn btn-primary">Sign Up</button>
                         </div>
+                    </div>
 
-                        <div class="field">
-                            <div class="control">
-                                <p id="message"></p>
-                            </div>
+                    <div class="field">
+                        <div class="control">
+                            <p id="message"></p>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
+
+        </div>
+
+       
 `
 
-$root.append(signInForm);
+
+
+
+
+
+
+
+$root.append(forms);
+$('#logIn').on("click", null, null, handleSubmitLogIn );
+
 $('#signUp').on("click", null, null, handleSignUp);
 
+
+
 }
+
+
+
+
 
 export const handleSignUp = async function (event) {
     event.preventDefault();
@@ -88,8 +90,8 @@ export const handleSignUp = async function (event) {
         name: "" + $(`#emailSignUp`).val() + "",
         pass: "" + $(`#passwordSignUp`).val() + "",
         data: {
-            fname: "" + $(`#emailSignUp`).val() + "",
-            lname: "" + $(`#passwordSignUp`).val() + "",
+            fname: "" + $(`#fNameSignUp`).val() + "",
+            lname: "" + $(`#lNameSignUp`).val() + "",
          
         }
     }).then(response => {
@@ -136,7 +138,7 @@ export const handleSubmitLogIn = async function (event) {
     request.then(response => {
         console.log(response.data.fname);
         
-         window.location.href = "http://localhost:3001/index.html"
+         window.location.href = "http://localhost:3001/myProfile.html"
          alert("authenticated as " + r.data.name)
         // alert("signed in as " + response.data.fname);
        
@@ -154,7 +156,8 @@ export const handleSubmitLogIn = async function (event) {
 
 
 
+
 $(function () {
-    renderSignUpForm();
-    renderLogInForm();
+   renderForms();
+   
 });
