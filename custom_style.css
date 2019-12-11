@@ -16,6 +16,15 @@ hr{
     font-size: 2.8em !important;
 }
 
+/* h1 {
+    display: inline;
+}
+
+h5 {
+    padding-bottom: 10px;
+} */
+
+
 /* .main-title{
     
 } */
@@ -34,6 +43,12 @@ hr{
     font-weight: lighter !important;
     color: #110C5D;
 }
+
+/* img {
+    vertical-align: middle;
+
+
+} */
 img.is-home {
     height: 300px !important;
     width: 300px !important;
@@ -43,7 +58,7 @@ img.is-home {
     /*margin: .3em;*/
 }
 
-img:hover {
+img.is-home:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     transform: scale(1.05);
 }
