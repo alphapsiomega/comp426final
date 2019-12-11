@@ -13,8 +13,10 @@
     "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
     "bulma": "^0.8.0",
+    "cors": "^2.8.5",
     "jQuery": "^1.7.4",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "react": "^16.12.0"
   },
   "repository": {
     "type": "git",
