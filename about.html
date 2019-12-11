@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="custom_style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+        <link href="~bulma-carousel/dist/css/bulma-carousel.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="content has-text-centered">
@@ -31,6 +32,31 @@
                     <li><a href="profile.html">Profile</a></li>
                 </ul>
         </div>
+        <section class="section">
+                <div class="container">
+                    <!-- Start Carousel -->
+                    <div id="carousel-demo" class="carousel">
+                        <div class="item-1">
+                            <!-- Slide Content -->
+                        </div>
+                        <div class="item-2">
+                            <!-- Slide Content -->
+                        </div>
+                        <div class="item-3">
+                            <!-- Slide Content -->
+                        </div>
+                    </div>
+                    <!-- End Carousel -->
+                </div>
+            </section>
+    
+            <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+            <script>
+            bulmaCarousel.attach('#carousel-demo', {
+                slidesToScroll: 1,
+                slidesToShow: 4
+            });
+            </script>
         <div class="has-text-centered">
             <img class="is-rounded" src="58917022_420889848698557_2703238539063066624_o.jpg" width="500px" height="200px">
         </div>
@@ -44,5 +70,6 @@
     <!-- Include links to JavaScript files below -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
 </body>
 </html>
