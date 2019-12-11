@@ -16,6 +16,15 @@ hr{
     font-size: 2.8em !important;
 }
 
+h1 {
+    display: inline;
+}
+
+h5 {
+    padding-bottom: 10px;
+}
+
+
 /* .main-title{
     
 } */
@@ -33,6 +42,12 @@ hr{
     font-size: 6em !important;
     font-weight: lighter !important;
     color: #110C5D;
+}
+
+img {
+    vertical-align: middle;
+
+
 }
 img.is-home {
     height: 300px !important;
