@@ -26,5 +26,6 @@
   "bugs": {
     "url": "https://github.com/alphapsiomega/comp426final/issues"
   },
-  "homepage": "https://github.com/alphapsiomega/comp426final#readme"
+  "homepage": "https://github.com/alphapsiomega/comp426final#readme",
+  "devDependencies": {}
 }

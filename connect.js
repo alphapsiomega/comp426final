@@ -166,3 +166,13 @@ function renderMemberCard() {
 $(function () {
     renderPage();
 });
+
+const debounce = (fn, time) => {
+
+    let timeout;
+
+    return function() {
+       // const functionCall = 
+    }
+
+}
