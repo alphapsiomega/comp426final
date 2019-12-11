@@ -37,6 +37,27 @@
         "fname": "RobPiscitelli",
         "lname": "lab"
       }
+    },
+    "justbeatesting": {
+      "passwordHash": "$2a$10$26g/k9XpVaHAG9sFE.F3R.yQ52JfVTsYFQnrkDSzBzbHrz0ES7XOG",
+      "data": {
+        "fname": "Bea",
+        "lname": "Manaligod"
+      }
+    },
+    "labtheatreboard": {
+      "passwordHash": "$2a$10$4v81steUtm3shRjNgHWZEu0YsFN62PSbHw9UtZmo.sdjxdqsQeDSG",
+      "data": {
+        "fname": "stan",
+        "lname": "lab"
+      }
+    },
+    "beam": {
+      "passwordHash": "$2a$10$8YRaoZ66rlsKhJQaNiUGru/bB8ykILDsEvkliXKMi8GZIuGXngedG",
+      "data": {
+        "fname": "bea",
+        "lname": "m"
+      }
     }
   }
 }
