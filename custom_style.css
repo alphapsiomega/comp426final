@@ -145,5 +145,20 @@ img.is-profile-pic {
     margin-right: 13px;
 }
 
+.is-post-button {
+
+    color: black;
+    padding: 20px;
+    background-color: white;
+
+}
+
+textarea {
+
+    width: 100%;
+    height: 65px;
+
+}
+
 
 

@@ -1,3 +1,6 @@
+
+
+
 export const renderForms = function () {
     const $root = $('#root'); // root is whatever has root as the ID
 
@@ -11,7 +14,7 @@ export const renderForms = function () {
 
                 <div class="content">
                     <form id="signIn-form">
-                        <input id="emailLogin" type="email" name="email" title="email" placeholder="Email" required autofocus>
+                        <input id="userLogin" type="email" name="email" title="email" placeholder="Email" required autofocus>
                         <input id="passwordLogin" type="password" name="password" title="password" placeholder="Password" required>
 
                         <div class="field">
@@ -37,8 +40,8 @@ export const renderForms = function () {
             <div class="content">
                 <form id="login-form">
                 <input id="fNameSignUp" type="email" name="email" title="email" placeholder="First Name" required autofocus>
-                <input id="fNameignUp" type="email" name="email" title="email" placeholder="Last Name" required autofocus>
-                    <input id="emailSignUp" type="email" name="email" title="email" placeholder="Email" required autofocus>
+                <input id="lNameSignUp" type="email" name="email" title="email" placeholder="Last Name" required autofocus>
+                    <input id="userSignUp" type="email" name="email" title="email" placeholder="Username" required autofocus>
                     <input id="passwordSignUp" type="password" name="password" title="password" placeholder="Password" required>
                     
                     <div class="field">
@@ -87,7 +90,7 @@ export const handleSignUp = async function (event) {
 
     // result of axios call 
     let r = axios.post('http://localhost:3000/account/create', {
-        name: "" + $(`#emailSignUp`).val() + "",
+        name: "" + $(`#userSignUp`).val() + "",
         pass: "" + $(`#passwordSignUp`).val() + "",
         data: {
             fname: "" + $(`#fNameSignUp`).val() + "",
@@ -111,48 +114,76 @@ export const handleSignUp = async function (event) {
 export const handleSubmitLogIn = async function (event) {
     event.preventDefault();
 
-    console.log($('#emailLogin').val());
+    console.log($('#userLogin').val());
     console.log($('#passwordLogin').val());
     // result of axios call 
     let r = await axios ({
         method: "post",
         url: "http://localhost:3000/account/login",
         data: {
-            name: "" + $('#emailLogin').val() + "",
+            name: "" + $('#userLogin').val() + "",
             pass: "" + $('#passwordLogin').val() + ""
         }
     });
 
+    // this creates a JWT token
     
 
-    console.log(r);
-    window.jwt = r.data.jwt
+
+
+
+    var token = r.data.jwt;
+
+    // decoded token
+    var decoded = parseJwt(token);
+    
+
+
+
+    var username = decoded.name;
+
+
+    // decoded holds the JSON object
+
+   
+
+
     let request = axios.get('http://localhost:3000/account/status', 
     {
         headers: {
-            "Authorization": "Bearer " + window.jwt
+            "Authorization": "Bearer " + token
         }
     }
 );
-   
+    
+
+
     request.then(response => {
-        console.log(response.data.fname);
+   
         
-         window.location.href = "http://localhost:3001/myProfile.html"
-         alert("authenticated as " + r.data.name)
+        //  window.location.href = "http://localhost:3001/index.html"
+        //  alert("authenticated as " + r.data.name)
+         
         // alert("signed in as " + response.data.fname);
        
     }). catch (error => {
         console.log("failed to authenticate")
         alert(error);
-    });
-    
-    
-
-
+    });  
 
 }
 
+
+
+function parseJwt (token) {
+    var base64Url = token.split('.')[1];
+    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+
+    return JSON.parse(jsonPayload);
+};
 
 
 
