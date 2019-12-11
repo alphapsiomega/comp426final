@@ -23,6 +23,20 @@
         "fname": "stuartmj",
         "lname": "evankrell"
       }
+    },
+    "beetlejuice": {
+      "passwordHash": "$2a$10$WrW9CqOIzovre3sKiZla..7eqDk661Rr8IpLVtmslxOgoILZr5xsa",
+      "data": {
+        "fname": "beetlejuice",
+        "lname": "beetlejuice"
+      }
+    },
+    "robpiscitelli": {
+      "passwordHash": "$2a$10$S15Y1LSuJUESWmzSpoLyrOlcaxrmRl0wpUOlNIpg/daVvWY95ixPy",
+      "data": {
+        "fname": "RobPiscitelli",
+        "lname": "lab"
+      }
     }
   }
 }

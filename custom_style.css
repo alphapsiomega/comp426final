@@ -127,5 +127,23 @@ img.is-profile-pic {
 
 }
 
+.is-selected-left {
+    border: solid;
+    border-width: 1px;
+    border-color: #003365;
+    background-color: #003365;
+    color: white;
+    margin-left: 13px;
+}
+
+.is-selected-right {
+    border: solid;
+    border-width: 1px;
+    border-color: #003365;
+    background-color: #003365;
+    color: white;
+    margin-right: 13px;
+}
+
 
 
