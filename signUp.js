@@ -16,13 +16,26 @@ let renderSignUpForm = function () {
 </div>
 
 <div class="field">
+  <label class="label">Password</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input" type="text" placeholder="Password" value="">
+    
+    </div>
+ 
+
+    <div class="field">
+  <label class="label">Re-enter password</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input" type="text" placeholder="Re-enter password" value="">
+    
+    </div>
+
+    <div class="field">
   <label class="label">Username</label>
   <div class="control has-icons-left has-icons-right">
     <input class="input" type="text" placeholder="Username" value="">
     
-    
- 
-
+    </div>
 
 
 <div class="field">
@@ -57,7 +70,7 @@ let renderSignUpForm = function () {
   <input type="checkbox">
   Stage Manager
 </label>
-  </div>
+
   <label class="checkbox">
   <input type="checkbox">
   Set Designer
@@ -65,8 +78,13 @@ let renderSignUpForm = function () {
 <label class="checkbox">
 <input type="checkbox">
 Costumer
+
+
+</div>
+
+<div class="control">
 </label>
-<label class="checkbox">xw
+<label class="checkbox">
 <input type="checkbox">
 Lighting Designer
 </label>
@@ -76,20 +94,26 @@ Lighting Designer
 Sound Designer
 </label>
 
+<label class="checkbox">
+<input type="checkbox">
+Writer
+</label>
+
+
+<label class="checkbox">
+<input type="checkbox">
+Executive
+</label>
+
+
+<label class="checkbox">
+<input type="checkbox">
+Stagehand
+</label>
+
+</div>
 </div>
 
-<div class="field">
-  <div class="control">
-    <label class="radio">
-      <input type="radio" name="question">
-      Yes
-    </label>
-    <label class="radio">
-      <input type="radio" name="question">
-      No
-    </label>
-  </div>
-</div>
 
 <div class="field is-grouped">
   <div class="control">
