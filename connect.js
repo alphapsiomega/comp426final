@@ -55,6 +55,8 @@ export async function handleWelcomeButtonPress(event) {
 
     for(let i=0; i<50; i++){
         //alert("good lord");
+
+        if(i%2==0){
         r+=`
             <div class="is-profile-card">
             <div class="columns">
@@ -78,14 +80,68 @@ export async function handleWelcomeButtonPress(event) {
                     Competent
                 </div>
                 <div class="column">
+                    <button type="button" class="button is-warning" id="request">Request</button>
                 </div>
             </div>
             </div>
             `;
+        }
+        else {
+
+            r+=`
+            <div class="is-profile-card">
+            <div class="columns">
+                <div class="column">
+                        <img class="is-profile-pic" width="50" height="50" src="OldWell.png">
+                </div>
+                <div class="column">
+                    Twig Man</br>
+                    <span style:"color: #F8DA17">Senior</span>
+                </div>
+                <div class="column">
+                    Director</br>
+                    Experienced
+                </div>
+                <div class="column">
+                    Actor</br>
+                    Interested
+                </div>
+                <div class="column">
+                    Producer</br>
+                    Competent
+                </div>
+                <div class="column">
+                    <button type="button" class="button is-danger" id="unavailable">Unavailable</button>
+                </div>
+            </div>
+            </div>
+            `;  
+
+        }
     }
     r+=`</div>`
 
+    $root.on('click', "#request", handleRequestButtonPress);
+
     $('#appBox').replaceWith(r);
+}
+
+export async function handleRequestButtonPress(event) {
+
+    //alert("anything");
+    event.preventDefault();
+    let content = event.target.getAttribute("id");
+    
+    if(content=="request") {
+
+        let r = `
+        <button type="button" class="button is-success" id="unrequest">Requested!</button>
+        `
+
+        $('#request').replaceWith(r);
+
+    }
+
 }
 //render search bar ??
 function renderSearchBar() {
