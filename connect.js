@@ -48,7 +48,7 @@ export async function handleWelcomeButtonPress(event) {
 
             <form>
             <select>
-                <option value="any">Any</option>
+                <option value="any">Anything</option>
                 <option value="actors">Acting</option>
                 <option value="directors">Directing</option>
                 <option value="producers">Producing</option>
@@ -325,7 +325,7 @@ else {
             `;
         }
         else {
-
+// stuff
             r+=`
             <div class="is-profile-card">
             <div class="columns">
@@ -397,7 +397,7 @@ function renderMemberCard() {
 $(function () {
     renderPage();
 });
-
+// Stuff
 const debounce = (fn, time) => {
 
     let timeout;
