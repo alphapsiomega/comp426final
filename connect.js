@@ -35,9 +35,20 @@ export async function handleWelcomeButtonPress(event) {
             <form>
             <select>
                 <option value="any">Any</option>
-                <option value="actors">Actors</option>
-                <option value="directors">Directors</option>
-                <option value="producers">Producers</option>
+                <option value="actors">Acting</option>
+                <option value="directors">Directing</option>
+                <option value="producers">Producing</option>
+                <option value="costumes">Costuming</option>
+                <option value="props">Props</option>
+                <option value="set">Set</option>
+                <option value="makeup">Make-Up</option>
+                <option value="lighting">Lighting</option>
+                <option value="sound">Sound</option>
+                <option value="dramaturg">Dramaturg</option>
+                <option value="writing">Writing</option>
+                <option value="executive">Executive</option>
+                <option value="stagehand">Stagehand</option>
+                <option value="general">General</option>
             </select>
             <div class="field">
                             <div class="control" style="padding: 20px">
@@ -55,7 +66,40 @@ export async function handleWelcomeButtonPress(event) {
 
     for(let i=0; i<50; i++){
         //alert("good lord");
+
+        if(i%2==0){
         r+=`
+            <div class="is-profile-card">
+            <div class="columns">
+                <div class="column">
+                        <img class="is-profile-pic" width="50" height="50" src="OldWell.png">
+                </div>
+                <div class="column">
+                    <b>Twig Man</b></br>
+                    <span style:"color: #F8DA17">Senior</span>
+                </div>
+                <div class="column">
+                    <b>Director</b></br>
+                    Experienced
+                </div>
+                <div class="column">
+                    <b>Actor</b></br>
+                    Interested
+                </div>
+                <div class="column">
+                    <b>Producer</b></br>
+                    Competent
+                </div>
+                <div class="column">
+                    <button type="button" class="button is-warning" id="request">Request</button>
+                </div>
+            </div>
+            </div>
+            `;
+        }
+        else {
+
+            r+=`
             <div class="is-profile-card">
             <div class="columns">
                 <div class="column">
@@ -78,14 +122,37 @@ export async function handleWelcomeButtonPress(event) {
                     Competent
                 </div>
                 <div class="column">
+                    <button type="button" class="button is-danger" id="unavailable">Unavailable</button>
                 </div>
             </div>
             </div>
-            `;
+            `;  
+
+        }
     }
     r+=`</div>`
 
+    $root.on('click', "#request", handleRequestButtonPress);
+
     $('#appBox').replaceWith(r);
+}
+
+export async function handleRequestButtonPress(event) {
+
+    //alert("anything");
+    event.preventDefault();
+    let content = event.target.getAttribute("id");
+    
+    if(content=="request") {
+
+        let r = `
+        <button type="button" class="button is-success" id="unrequest">Requested!</button>
+        `
+
+        $('#request').replaceWith(r);
+
+    }
+
 }
 //render search bar ??
 function renderSearchBar() {
