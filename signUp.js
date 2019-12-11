@@ -10,32 +10,37 @@ let renderSignUpForm = function () {
     <div class="field">
   <label class="label">Name</label>
   <div class="control">
-    <input class="input" type="text" placeholder="First Name">
-    <input class="input" type="text" placeholder="Last Name">
+    <input class="input" type="text" id = "fNameSignUp"  placeholder="First Name">
+    <input class="input" type="text"  id = "lNameSignUp" placeholder="Last Name">
   </div>
 </div>
 
-<div class="field">
-  <label class="label">Password</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input" type="text" placeholder="Password" value="">
-    
-    </div>
+
  
 
-    <div class="field">
-  <label class="label">Re-enter password</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input" type="text" placeholder="Re-enter password" value="">
-    
-    </div>
+  
 
     <div class="field">
   <label class="label">Username</label>
   <div class="control has-icons-left has-icons-right">
-    <input class="input" type="text" placeholder="Username" value="">
+    <input class="input" type="text" id = "userSignUp" placeholder="Username" value="">
     
     </div>
+
+
+    <div class="field">
+  <label class="label">Password</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input" type="text"  id = "passwordSignUp"  placeholder="Password" value="">
+    
+    </div>
+
+    <div class="field">
+    <label class="label">Re-enter password</label>
+    <div class="control has-icons-left has-icons-right">
+      <input class="input" type="text" placeholder="Re-enter password" value="">
+      
+      </div>
 
 
 <div class="field">
@@ -117,7 +122,7 @@ Stagehand
 
 <div class="field is-grouped">
   <div class="control">
-    <button class="button is-link">Submit</button>
+    <button class="button is-link" id = "signUp" >Submit</button>
   </div>
   <div class="control">
     <button class="button is-link is-light">Cancel</button>
@@ -127,9 +132,43 @@ Stagehand
     `)
 
     $root.append(signUpForm)
+    $('#signUp').on("click", null, null, handleSignUp);
 }
 
 $(function () {
     renderSignUpForm();
     
  });
+
+
+ export const handleSignUp = async function (event) {
+  event.preventDefault();
+  console.log($('#passwordSignUp').val())
+  console.log($(`#userSignUp`).val());
+  console.log( $(`#passwordSignUp`).val());
+  console.log($(`#fNameSignUp`).val() )
+  console.log($(`#lNameSignUp`).val())
+
+  // result of axios call 
+  let r = axios.post('http://localhost:3000/account/create', {
+      name: "" + $(`#userSignUp`).val() + "",
+      pass: "" + $(`#passwordSignUp`).val() + "",
+      data: {
+          fname: "" + $(`#fNameSignUp`).val() + "",
+          lname: "" + $(`#lNameSignUp`).val() + "",
+       
+      }
+  }).then(response => {
+      alert("hi");
+      console.log(response.data);
+  }).catch(error => {
+      console.log(error);
+  });
+
+  
+  // window.location.href = "http://localhost:3001/index.html"
+  
+
+}
+
+
