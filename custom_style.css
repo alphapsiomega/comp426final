@@ -68,6 +68,7 @@ img:hover {
     background-color: #003365;
     padding-top: 290px;
     padding-bottom: 290px;
+    
 
 }
 
@@ -77,13 +78,11 @@ img:hover {
     border: solid;
     border-color: #F8DA17;
     background-color: #003365;
-    padding-bottom: 290px;
 
 }
 
 .is-top-bar {
-
-    text-align: right;
+    text-align: center;
     background-color: #F8DA17;
 
 }
@@ -106,6 +105,12 @@ img.is-profile-pic {
     border-radius: 40%;
     height: 50px;
     width: 50px;
+
+}
+
+.is-interest-tag {
+
+
 
 }
 
