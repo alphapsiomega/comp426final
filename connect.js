@@ -35,9 +35,20 @@ export async function handleWelcomeButtonPress(event) {
             <form>
             <select>
                 <option value="any">Any</option>
-                <option value="actors">Actors</option>
-                <option value="directors">Directors</option>
-                <option value="producers">Producers</option>
+                <option value="actors">Acting</option>
+                <option value="directors">Directing</option>
+                <option value="producers">Producing</option>
+                <option value="costumes">Costuming</option>
+                <option value="props">Props</option>
+                <option value="set">Set</option>
+                <option value="makeup">Make-Up</option>
+                <option value="lighting">Lighting</option>
+                <option value="sound">Sound</option>
+                <option value="dramaturg">Dramaturg</option>
+                <option value="writing">Writing</option>
+                <option value="executive">Executive</option>
+                <option value="stagehand">Stagehand</option>
+                <option value="general">General</option>
             </select>
             <div class="field">
                             <div class="control" style="padding: 20px">
@@ -64,19 +75,19 @@ export async function handleWelcomeButtonPress(event) {
                         <img class="is-profile-pic" width="50" height="50" src="OldWell.png">
                 </div>
                 <div class="column">
-                    Twig Man</br>
+                    <b>Twig Man</b></br>
                     <span style:"color: #F8DA17">Senior</span>
                 </div>
                 <div class="column">
-                    Director</br>
+                    <b>Director</b></br>
                     Experienced
                 </div>
                 <div class="column">
-                    Actor</br>
+                    <b>Actor</b></br>
                     Interested
                 </div>
                 <div class="column">
-                    Producer</br>
+                    <b>Producer</b></br>
                     Competent
                 </div>
                 <div class="column">
