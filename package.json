@@ -13,7 +13,11 @@
     "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
     "bulma": "^0.8.0",
+<<<<<<< HEAD
+    "bulma-carousel": "^4.0.4",
+=======
     "cors": "^2.8.5",
+>>>>>>> f8eaefbc3908b1a920eb288202ba7d39799c3e5d
     "jQuery": "^1.7.4",
     "jquery": "^3.4.1",
     "react": "^16.12.0"
