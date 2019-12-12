@@ -14,17 +14,20 @@ export const renderForms = function () {
 
                 <div class="content">
                     <form id="signIn-form">
-                        <input id="userLogin" type="email" name="email" title="email" placeholder="Email" required autofocus>
-                        <input id="passwordLogin" type="password" name="password" title="password" placeholder="Password" required>
-
+                        <input class="input is-rounded" id="userLogin" type="email" name="email" title="email" placeholder="Email" required autofocus>
+                        <p></p>
+                        <input class="input is-rounded" id="passwordLogin" type="password" name="password" title="password" placeholder="Password" required>
+                        <p></p>
                         <div class="field">
                             <div class="control">
                                 <button type="submit" id = "logIn" class="btn btn-primary">Login</button>
                             </div>
+                            <p></p>
                             <div class="control">
                             <button type="submit" id = "logOut" class="btn btn-primary">Logout</button>
                         </div>
                         </div>
+                        <p style="padding-bottom: 297px"></p>
 
                         <div class="field">
                             <div class="control">
@@ -42,11 +45,15 @@ export const renderForms = function () {
 
             <div class="content">
                 <form id="login-form">
-                <input id="fNameSignUp" type="email" name="email" title="email" placeholder="First Name" required autofocus>
-                <input id="lNameSignUp" type="email" name="email" title="email" placeholder="Last Name" required autofocus>
-                    <input id="userSignUp" type="email" name="email" title="email" placeholder="Username" required autofocus>
-                    <input id="passwordSignUp" type="password" name="password" title="password" placeholder="Password" required>
-                    <div class="field">
+                <input class="input is-rounded" id="fNameSignUp" type="email" name="email" title="email" placeholder="First Name" required autofocus>
+                <p></p>  
+                <input class="input is-rounded" id="lNameSignUp" type="email" name="email" title="email" placeholder="Last Name" required autofocus>
+                <p></p>      
+                <input class="input is-rounded" id="userSignUp" type="email" name="email" title="email" placeholder="Username" required autofocus>
+                <p></p>      
+                <input class="input is-rounded" id="passwordSignUp" type="password" name="password" title="password" placeholder="Password" required>
+                <p></p>      
+                <div class="field">
   <div class="control">
 
   <div class="field">
@@ -123,7 +130,7 @@ Executive
 Stagehand
 </label>
 
-
+<p></p>  
 <label class="label">Member of Alpha Psi Omega? <input type="checkbox"  id = "isMember" > </label>
 
 
@@ -178,18 +185,20 @@ export const handleSignUp = async function (event) {
             fname: "" + $(`#fNameSignUp`).val() + "",
             lname: "" + $(`#lNameSignUp`).val() + "",
             isMember: $('#isMember').is(':checked'),
-
-            isDirector: $('#isDirector').is(':checked'),
-            isProducer: $('#isProducer').is(':checked'),
-            isStageManager: $('#isStageManager').is(':checked'),
-            isCostumer: $('#isCostumer').is(':checked'),
-            isSetDesigner: $('#isSetDesigner').is(':checked'),
-            isLighting: $('#isLighting').is(':checked'),
-            isSound: $('#isSound').is(':checked'),
-            isWriter: $('#isWriter').is(':checked'),
-            isExec: $('#isExec').is(':checked'),
-            isProps: $('#isProps').is(':checked'),
-            isStagehand: $('#isStagehand').is(':checked'),
+            positions: {
+                isDirector: $('#isDirector').is(':checked'),
+                isProducer: $('#isProducer').is(':checked'),
+                isStageManager: $('#isStageManager').is(':checked'),
+                isCostumer: $('#isCostumer').is(':checked'),
+                isSetDesigner: $('#isSetDesigner').is(':checked'),
+                isLighting: $('#isLighting').is(':checked'),
+                isSound: $('#isSound').is(':checked'),
+                isWriter: $('#isWriter').is(':checked'),
+                isExec: $('#isExec').is(':checked'),
+                isProps: $('#isProps').is(':checked'),
+                isStagehand: $('#isStagehand').is(':checked'),
+            },
+       
             grade: $('#grade option:selected').text()
 
          
