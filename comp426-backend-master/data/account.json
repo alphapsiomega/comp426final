@@ -191,6 +191,13 @@
         "fname": "eehee",
         "lname": "eeehee"
       }
+    },
+    "reeb": {
+      "passwordHash": "$2a$10$3DBBuDhYSXsPXXa6BlKZIeoIGJwFRHZl02XC4D60t2HJDZX.Xo6BS",
+      "data": {
+        "fname": "Reeb",
+        "lname": "Scothorn"
+      }
     }
   }
 }
