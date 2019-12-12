@@ -8,6 +8,33 @@
         "lname": "stop",
         "isMember": true
       }
+    },
+    "userrapunzel": {
+      "name": "rapunzel",
+      "pass": "hair",
+      "data": {
+        "fname": "princess",
+        "lname": "tangled",
+        "isMember": true
+      }
+    },
+    "userwhite": {
+      "name": "white",
+      "pass": "white",
+      "data": {
+        "fname": "snow",
+        "lname": "white",
+        "isMember": true
+      }
+    },
+    "userbabie": {
+      "name": "babie",
+      "pass": "babie",
+      "data": {
+        "fname": "baybee",
+        "lname": "baybee",
+        "isMember": true
+      }
     }
   }
 }
