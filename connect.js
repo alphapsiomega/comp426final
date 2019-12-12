@@ -185,8 +185,9 @@ export async function handlePostButtonPress(event) {
 
     let jwt = localStorage.getItem('jwt');
     console.log(jwt);
+    let decode = parseJwt(jwt);
 
-
+    console.log(decode.data.fname);
     
     try {
     
@@ -196,7 +197,9 @@ export async function handlePostButtonPress(event) {
         data: {
             data: {
                 "type": "post",
-                "body": textContent
+                "body": textContent,
+                "first": decode.data.fname,
+                "last": decode.data.lname
             }
           
         },
@@ -227,6 +230,7 @@ export async function handlePostButtonPress(event) {
 
 export async function renderUserList (event) {
     // event.preventDefault();
+    /*
 
     axios({
         method: 'get',
@@ -250,9 +254,10 @@ export async function renderUserList (event) {
     
        
          ) .catch(error => console.log(error))
-        
+        */
 
 }
+
 export async function handleWelcomeButtonPress(event) {
 
 //   console.log("Welcome, " + decode.data.fname);
@@ -462,31 +467,48 @@ export async function handlePostsTabClick(event) {
     console.log(response.data.result);
     
 
+    let count=0;
+    
+    let order=[];
+
     for(var key in response.data.result) {
+        
         if(response.data.result.hasOwnProperty(key)) {
-                    r+=`
-            <div class="is-profile-card">
-            <div class="columns">
-                <div class="column">
-                        <img class="is-profile-pic" width="50" height="50" src="OldWell.png">
-                </div>
-                <div class="column">
-                    <b>Twig Man</b></br>
-                    <span style:"color: #F8DA17">Senior</span>
-                </div>
-                <div class="column">
-                    ${response.data.result[key].body}
-                </div>
-                <div class="column">
-                    <button type="button" class="button is-warning" id="request">Request</button>
-                </div>
-            </div>
-            </div>
-            `;
-                    console.log(response.data.result[key].body);
+              
+                    //console.log(response.data.result[key].body);
+    
+                        console.log(key);
+                        order[count]=`
+                        <div class="is-profile-card">
+                        <div class="columns">
+                            <div class="column">
+                                    <img class="is-profile-pic" width="50" height="50" src="OldWell.png">
+                            </div>
+                            <div class="column">
+                                <b>${response.data.result[key].first} ${response.data.result[key].last}</b></br>
+                                <span style:"color: #F8DA17">Senior</span>
+                            </div>
+                            <div class="column">
+                                ${response.data.result[key].body}
+                            </div>
+                            <div class="column">
+                                <button type="button" class="button is-warning" id="request">Request</button>
+                            </div>
+                        </div>
+                        </div>
+                        `;
+
+                    console.log(count);
+                    count++;
             
             
         }
+    }
+
+    for(let i=order.length-1; i>=0; i--) {
+
+        r+=order[i];
+
     }
 
 /*
@@ -656,6 +678,7 @@ else {
 }
 
 export async function handleRequestButtonPress(event) {
+
 
     //alert("anything");
     event.preventDefault();

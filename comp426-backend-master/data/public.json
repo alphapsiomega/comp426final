@@ -58,6 +58,7 @@
         "lname": "aaaa"
       }
     },
+<<<<<<< HEAD
     "usermhsarks": {
       "name": "mhsarks",
       "pass": "aaaaa",
@@ -89,6 +90,14 @@
         "fname": "bob",
         "lname": "risketyely",
         "isMember": true
+=======
+    "userreeb": {
+      "name": "reeb",
+      "pass": "lab",
+      "data": {
+        "fname": "Reeb",
+        "lname": "Scothorn"
+>>>>>>> d10439dd68ae5c2cc9a941008eb72457c71c3769
       }
     }
   }
