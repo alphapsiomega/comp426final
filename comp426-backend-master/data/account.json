@@ -170,6 +170,55 @@
         "fname": "heck!",
         "lname": "heck!"
       }
+    },
+    "aaaa": {
+      "passwordHash": "$2a$10$RYsGzRJlMCeTvZhucNHcU.YAd7EvR2FBckT54MbODDzbOriGmv1fi",
+      "data": {
+        "fname": "a",
+        "lname": "aaa"
+      }
+    },
+    "woo": {
+      "passwordHash": "$2a$10$b3O6uGl/7iDTfki1HWn1lOBOSeVpkgb2J8UCVrz0LaV2D4L1k0q2C",
+      "data": {
+        "fname": "woo",
+        "lname": "woo"
+      }
+    },
+    "lmao": {
+      "passwordHash": "$2a$10$aRXOgb7DBVV1aYfydkRvSOhAurU9FSYEuDd.V4lIqCR3Hep5ffrU6",
+      "data": {
+        "fname": "lmao",
+        "lname": "lmao"
+      }
+    },
+    "tryingitagain": {
+      "passwordHash": "$2a$10$QxJqIUM4aENEgJ.0fiHXwuTeWLx8Fs2ROTFn3Cci51QXjsqhNttTO",
+      "data": {
+        "fname": "tryingitagain",
+        "lname": "trying"
+      }
+    },
+    "onemoretime": {
+      "passwordHash": "$2a$10$cmC.Fm6icqmub6mv8QTy5.I70PJ/fBZG1e6djOEuUQMuBJ81QDL6i",
+      "data": {
+        "fname": "onemoretime",
+        "lname": "onemoretime"
+      }
+    },
+    "eehee": {
+      "passwordHash": "$2a$10$AknsxnUDzt22cNvI8tZwLO5BZ8Qq1MkSpkqKyom9wkB8vq9yanBz.",
+      "data": {
+        "fname": "eehee",
+        "lname": "eehee"
+      }
+    },
+    "eeehee": {
+      "passwordHash": "$2a$10$7cUHTb19oKLr09dGiKrtpOaKEBX66tH5Oly3uitoJ1Pr8misPjXDS",
+      "data": {
+        "fname": "eehee",
+        "lname": "eeehee"
+      }
     }
   }
 }

@@ -105,11 +105,11 @@ export const handleSignUp = async function (event) {
     });
     
     let id = $('#userSignUp').val();
-    let r2 = axios.post('http://localhost:3000/public/users' + id, {
+    let r2 = axios.post('http://localhost:3000/public/users/user' + id, {
         
         data: {
             name: "" + $(`#userSignUp`).val() + "",
-        pass: "" + $(`#passwordSignUp`).val() + "",
+            pass: "" + $(`#passwordSignUp`).val() + "",
             data: {
             fname: "" + $(`#fNameSignUp`).val() + "",
             lname: "" + $(`#lNameSignUp`).val() + "",

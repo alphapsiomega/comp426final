@@ -5,19 +5,10 @@
 
 const $root = $('#root');
 
-// let jwt = localStorage.getItem('jwt');
-// console.log(jwt);
-// let decode = parseJwt(jwt);
 
-
-//let jwt = localStorage.getItem('jwt')
-//console.log("jwt is " + jwt);
-
-//this is to render the whole page. It will call the list render in it, which will call the 
-//membercard render, etc etc
 export async function renderPage() {
 
-    getUsers();
+
     let appBox = `
         <div class="container has-text-centered is-connect-box" id="appBox">
             <div id="replace">
@@ -34,7 +25,7 @@ export async function renderPage() {
 
 export async function handlePostBoxClick(event) {
 
-    event.preventDefault;
+    // event.preventDefault();
     let r = `<div id="textype">
     <textarea class="postText"></textarea>
     </div>
@@ -45,6 +36,35 @@ export async function handlePostBoxClick(event) {
 
 }
 
+
+export async function renderUserList (event) {
+    // event.preventDefault();
+
+    axios({
+        method: 'get',
+        url: 'http://localhost:3000/public/users',
+
+        })
+    
+    
+        .then(response =>  {
+            // console.log(response.data)
+            // console.log(response.data[1].body);
+          
+                console.log(response.data.result);
+                for (var key in response.data.result) {
+                    if (response.data.result.hasOwnProperty(key)) {
+                        console.log(response.data.result[key].data.fname);
+                    }
+    
+            
+        }}
+    
+       
+         ) .catch(error => console.log(error))
+        
+
+}
 export async function handleWelcomeButtonPress(event) {
 
 //   console.log("Welcome, " + decode.data.fname);
@@ -436,6 +456,7 @@ function renderMemberCard() {
 }
 $(function () {
     renderPage();
+    renderUserList();
 });
 // Stuff
 const debounce = (fn, time) => {
@@ -460,39 +481,3 @@ function parseJwt (token) {
 };
 
 
-export const getUsers = function () {
-
-    
-  
-
-
-
-    // axios({
-    //     method: 'get',
-    //     url: 'https://localhost:3000/account/users',
-      
-    //     })
-    
-    
-    //     .then(response =>  {
-    //         // console.log(response.data)
-    //         // console.log(response.data[1].body);
-    //             loadTwitterFeed(response)
-            
-    //     }
-    
-       
-    //      ) .catch(error => console.log(error))
-
-
-    
-
-  
-
-   
-    
-    
-      
-   
-      
-}
