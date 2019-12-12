@@ -5,6 +5,14 @@
 
 const $root = $('#root');
 
+// let jwt = localStorage.getItem('jwt');
+// console.log(jwt);
+// let decode = parseJwt(jwt);
+
+
+//let jwt = localStorage.getItem('jwt')
+//console.log("jwt is " + jwt);
+
 //this is to render the whole page. It will call the list render in it, which will call the 
 //membercard render, etc etc
 export async function renderPage() {
@@ -51,6 +59,23 @@ export async function handleWelcomeButtonPress(event) {
     //alert(result[2].fname);
     
 */
+
+    event.preventDefault;
+    let r = `<div id="textype">
+    <textarea class="postText"></textarea>
+    </div>
+    <button type="submit" class="button is-black">Post</button>`
+    
+
+    $('#postBox').replaceWith(r);
+
+}
+
+export async function handleWelcomeButtonPress(event) {
+
+  console.log("Welcome, " + decode.data.fname);
+
+    
     
 
     let r = `
@@ -443,3 +468,14 @@ const debounce = (fn, time) => {
     }
 
 }
+
+
+function parseJwt (token) {
+    var base64Url = token.split('.')[1];
+    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+
+    return JSON.parse(jsonPayload);
+};

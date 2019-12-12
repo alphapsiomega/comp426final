@@ -58,6 +58,30 @@
         "fname": "bea",
         "lname": "m"
       }
+<<<<<<< HEAD
+=======
+    },
+    "testcreate": {
+      "passwordHash": "$2a$10$kbJIwLe23/TrAExjWuOmGOiepr3/rBKs6Ai15HX5t8RY4njl5zdk.",
+      "data": {
+        "fname": "test",
+        "lname": "create"
+      }
+    },
+    "test": {
+      "passwordHash": "$2a$10$MBbGISqyRSpf2k.7wDkw2OkS4/qdofN/GoxJoTGw49KHnCx9V8SIO",
+      "data": {
+        "fname": "test",
+        "lname": "test"
+      }
+    },
+    "help": {
+      "passwordHash": "$2a$10$mnvlj6q2VH1gIGdII.OEIu9pzAJ3dlxk/5ZRoHDK0A4QoK5TWvw56",
+      "data": {
+        "fname": "help",
+        "lname": "help"
+      }
+>>>>>>> 66a43a47b2995eb6a185aa4cd8a5a38d3d5b8cd7
     }
   }
 }
