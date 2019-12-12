@@ -1,27 +1,35 @@
 export const renderProfile = function () {
     let $root = $('#root');
     let jwt = localStorage.getItem('jwt');
-
+    console.log(jwt);
     let decode = parseJwt(jwt);
 
+    console.log(decode);
     let name = decode.name;
+    let grade = decode.data.grade;
     console.log(name);
 
 
-    let profile = $(`
+    let header = $(`
 
     <h1 class="title is-1"> ${name} </h1>
+    <h5 class="subtitle is-5">${grade}</h5>
 
-    
-    
-    
-    
+    `)
+
+
+    let interests = $(`
     
     
     `)
     
+
+    let interests = $(`
     
-    $root.append(profile)
+    
+    `)
+    
+    $root.append(header)
 
 }
 

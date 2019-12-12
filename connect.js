@@ -241,7 +241,7 @@ export async function renderUserList (event) {
     
         .then(response =>  {
             // console.log(response.data)
-            // console.log(response.data[1].body);
+        
           
                 console.log(response.data.result);
                 for (var key in response.data.result) {

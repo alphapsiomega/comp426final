@@ -226,6 +226,26 @@
         "isProps": false,
         "isStagehand": false
       }
+    },
+    "elsanna": {
+      "passwordHash": "$2a$10$tUhmfCHuWWXc/ZA1Tg7Kh.n6Mkhx26HEpLbszXz5a6m7vy1uTYCVG",
+      "data": {
+        "fname": "elsa",
+        "lname": "anna",
+        "isMember": false,
+        "isDirector": false,
+        "isProducer": false,
+        "isStageManager": true,
+        "isCostumer": false,
+        "isSetDesigner": false,
+        "isLighting": false,
+        "isSound": false,
+        "isWriter": false,
+        "isExec": false,
+        "isProps": false,
+        "isStagehand": false,
+        "grade": "Freshman"
+      }
     }
   }
 }

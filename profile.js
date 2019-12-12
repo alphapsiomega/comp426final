@@ -21,6 +21,9 @@ export const renderForms = function () {
                             <div class="control">
                                 <button type="submit" id = "logIn" class="btn btn-primary">Login</button>
                             </div>
+                            <div class="control">
+                            <button type="submit" id = "logOut" class="btn btn-primary">Logout</button>
+                        </div>
                         </div>
 
                         <div class="field">
@@ -45,7 +48,22 @@ export const renderForms = function () {
                     <input id="passwordSignUp" type="password" name="password" title="password" placeholder="Password" required>
                     <div class="field">
   <div class="control">
-  
+
+  <div class="field">
+  <label class="label">Grade</label>
+  <div class="control">
+    <div class="select">
+      <select id = "grade">
+        <option>Freshman</option>
+        <option>Sophomore</option>
+        <option>Junior</option>
+        <option>Senior</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
   <label class="label">Areas of Interest</label>
     <label class="checkbox">
       <input type="checkbox" id = "isDirector">
@@ -134,10 +152,17 @@ Stagehand
  console.log($('#isMember').is(':checked'));
 $root.append(forms);
 $('#logIn').on("click", null, null, handleSubmitLogIn );
-
+$('#logOut').on("click", null, null, handleSubmitLogOut );
 $('#signUp').on("click", null, null, handleSignUp);
 
 
+
+}
+
+export const handleSubmitLogOut = async function (event) {
+    console.log("removed");
+    localStorage.removeItem('jwt');
+    window.location.href = "http://localhost:3001/index.html"
 
 }
 export const handleSignUp = async function (event) {
@@ -165,6 +190,7 @@ export const handleSignUp = async function (event) {
             isExec: $('#isExec').is(':checked'),
             isProps: $('#isProps').is(':checked'),
             isStagehand: $('#isStagehand').is(':checked'),
+            grade: $('#grade option:selected').text()
 
          
         }
@@ -237,34 +263,15 @@ export const handleSubmitLogIn = async function (event) {
         }
     });
 
-    
 
-
-    
-    // this creates a JWT token
-    
-    
-    var username = decoded.name;
-    
    
-
-
-
-
-    var token = r.data.jwt;
-
-    // decoded token
-    var decoded = parseJwt(token);
-    
-
-
-
-    var username = decoded.name;
-
-
     // decoded holds the JSON object
 
    
+    var token = r.data.jwt;
+
+    localStorage.setItem('jwt', token); // put it in 
+
 
 
     let request = axios.get('http://localhost:3000/account/status', 
@@ -276,14 +283,14 @@ export const handleSubmitLogIn = async function (event) {
 );
     request.then(response => {
    
-        //  window.location.href = "http://localhost:3001/index.html"
+         window.location.href = "http://localhost:3001/myProfile.html"
        
     }). catch (error => {
         console.log("failed to authenticate")
         alert(error);
     });  
 
-    window.location.href = "http://localhost:3001/myProfile.html"
+  
 
 }
 
