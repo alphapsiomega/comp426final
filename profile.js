@@ -185,18 +185,20 @@ export const handleSignUp = async function (event) {
             fname: "" + $(`#fNameSignUp`).val() + "",
             lname: "" + $(`#lNameSignUp`).val() + "",
             isMember: $('#isMember').is(':checked'),
-
-            isDirector: $('#isDirector').is(':checked'),
-            isProducer: $('#isProducer').is(':checked'),
-            isStageManager: $('#isStageManager').is(':checked'),
-            isCostumer: $('#isCostumer').is(':checked'),
-            isSetDesigner: $('#isSetDesigner').is(':checked'),
-            isLighting: $('#isLighting').is(':checked'),
-            isSound: $('#isSound').is(':checked'),
-            isWriter: $('#isWriter').is(':checked'),
-            isExec: $('#isExec').is(':checked'),
-            isProps: $('#isProps').is(':checked'),
-            isStagehand: $('#isStagehand').is(':checked'),
+            positions: {
+                isDirector: $('#isDirector').is(':checked'),
+                isProducer: $('#isProducer').is(':checked'),
+                isStageManager: $('#isStageManager').is(':checked'),
+                isCostumer: $('#isCostumer').is(':checked'),
+                isSetDesigner: $('#isSetDesigner').is(':checked'),
+                isLighting: $('#isLighting').is(':checked'),
+                isSound: $('#isSound').is(':checked'),
+                isWriter: $('#isWriter').is(':checked'),
+                isExec: $('#isExec').is(':checked'),
+                isProps: $('#isProps').is(':checked'),
+                isStagehand: $('#isStagehand').is(':checked'),
+            },
+       
             grade: $('#grade option:selected').text()
 
          

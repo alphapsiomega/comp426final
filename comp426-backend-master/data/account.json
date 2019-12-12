@@ -267,11 +267,76 @@
         "grade": "Junior"
       }
     },
+<<<<<<< HEAD
     "nickg": {
       "passwordHash": "$2a$10$lN72AO/YnQBHnNCWKmXN9OmITrlMWPchugOqs2RdaMDCnoWzxm4xu",
       "data": {
         "fname": "Nick",
         "lname": "G"
+=======
+    "rapunzel": {
+      "passwordHash": "$2a$10$tXLZnb4L2YnfqZQnegcpJOvflUvin2gzDJlP2Gjb/3hptCVu8qifa",
+      "data": {
+        "fname": "princess",
+        "lname": "tangled",
+        "isMember": true,
+        "isDirector": false,
+        "isProducer": false,
+        "isStageManager": false,
+        "isCostumer": true,
+        "isSetDesigner": false,
+        "isLighting": false,
+        "isSound": false,
+        "isWriter": false,
+        "isExec": false,
+        "isProps": false,
+        "isStagehand": false,
+        "grade": "Freshman"
+      }
+    },
+    "white": {
+      "passwordHash": "$2a$10$cBAPUjLwBk2U.rBdD5Ha1uOQaAvlYe4.2l//zSuZ61xSgADsTRrFS",
+      "data": {
+        "fname": "snow",
+        "lname": "white",
+        "isMember": true,
+        "positions": {
+          "isDirector": false,
+          "isProducer": false,
+          "isStageManager": false,
+          "isCostumer": false,
+          "isSetDesigner": false,
+          "isLighting": true,
+          "isSound": false,
+          "isWriter": false,
+          "isExec": false,
+          "isProps": false,
+          "isStagehand": false
+        },
+        "grade": "Sophomore"
+      }
+    },
+    "babie": {
+      "passwordHash": "$2a$10$hCeHEIPuSxuVr0oPSKoeG.en.Zfe0Y8qHzif0Zxtj7JjUCB9r1a3S",
+      "data": {
+        "fname": "baybee",
+        "lname": "baybee",
+        "isMember": true,
+        "positions": {
+          "isDirector": true,
+          "isProducer": false,
+          "isStageManager": false,
+          "isCostumer": false,
+          "isSetDesigner": true,
+          "isLighting": true,
+          "isSound": false,
+          "isWriter": false,
+          "isExec": false,
+          "isProps": false,
+          "isStagehand": false
+        },
+        "grade": "Freshman"
+>>>>>>> 75bc5093a60637067d17c4bb9fad41ccac048d17
       }
     }
   }
