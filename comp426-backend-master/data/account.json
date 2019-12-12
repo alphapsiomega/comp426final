@@ -58,8 +58,6 @@
         "fname": "bea",
         "lname": "m"
       }
-<<<<<<< HEAD
-=======
     },
     "testcreate": {
       "passwordHash": "$2a$10$kbJIwLe23/TrAExjWuOmGOiepr3/rBKs6Ai15HX5t8RY4njl5zdk.",
@@ -81,7 +79,6 @@
         "fname": "help",
         "lname": "help"
       }
->>>>>>> 66a43a47b2995eb6a185aa4cd8a5a38d3d5b8cd7
     }
   }
 }
