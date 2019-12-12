@@ -9,7 +9,7 @@ export const renderForms = function () {
     <div id="login">
             <div class="login-card">
                 <div class="card-title">
-                    <h1>Alpha Psi Omega Login</h1>
+                    <h1 style="color: #F8DA17">Alpha Psi Omega Login</h1>
                 </div>
 
                 <div class="content">
@@ -40,7 +40,7 @@ export const renderForms = function () {
 
             <div class="login-card">
             <div class="card-title">
-                <h1>Alpha Psi Omega Sign Up</h1>
+                <h1 style="color: #F8DA17">Alpha Psi Omega Sign Up</h1>
             </div>
 
             <div class="content">
