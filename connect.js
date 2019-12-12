@@ -34,15 +34,11 @@ export async function renderPage() {
 
     let r = `
     <div class="container is-connect-box2" id="appBox">
-
         <div>
-
         <div class="is-top-bar">
-
             <div class="is-post-button" id="postBox">
                 Click here to post!
             </div>
-
             <form>
             
             <div class="field">
@@ -161,7 +157,6 @@ export async function renderPage() {
     /*
     for(let i=0; i<50; i++){
         //alert("good lord");
-
         if(i%2==0){
         r+=`
             <div class="is-profile-card">
@@ -193,7 +188,6 @@ export async function renderPage() {
             `;
         }
         else {
-
             r+=`
             <div class="is-profile-card">
             <div class="columns">
@@ -222,10 +216,8 @@ export async function renderPage() {
             </div>
             </div>
             `;  
-
         }
     }
-
     */
     r+=`</div>`
 
@@ -292,7 +284,6 @@ export async function handlePostButtonPress(event) {
       
 
       /*
-
      let r = axios.post('http://localhost:3000/public/', {
         
         data: {
@@ -309,11 +300,9 @@ export async function handlePostButtonPress(event) {
 export async function renderUserList (event) {
     // event.preventDefault();
     /*
-
     axios({
         method: 'get',
         url: 'http://localhost:3000/public/users',
-
         })
     
     
@@ -371,15 +360,11 @@ export async function handleWelcomeButtonPress(event) {
 
     let r = `
     <div class="container is-connect-box2" id="appBox">
-
         <div>
-
         <div class="is-top-bar">
-
             <div class="is-post-button" id="postBox">
                 Click here to post!
             </div>
-
             <form>
             
             <div class="field">
@@ -509,15 +494,11 @@ export async function handlePostsTabClick(event) {
     if(content!="users") {
     r = `
     <div class="container is-connect-box2" id="appBox">
-
         <div>
-
         <div class="is-top-bar">
-
             <div class="is-post-button" id="postBox">
                 Click here to post!
             </div>
-
             <form>
             
             <div class="field">
@@ -662,15 +643,11 @@ else {
 
     r = `
     <div class="container is-connect-box2" id="appBox">
-
         <div>
-
         <div class="is-top-bar">
-
             <div class="is-post-button" id="postBox">
                 Click here to post!
             </div>
-
             <form>
             
             <div class="field">
@@ -855,5 +832,4 @@ function parseJwt (token) {
 
     return JSON.parse(jsonPayload);
 };
-
 
