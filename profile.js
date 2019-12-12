@@ -43,7 +43,74 @@ export const renderForms = function () {
                 <input id="lNameSignUp" type="email" name="email" title="email" placeholder="Last Name" required autofocus>
                     <input id="userSignUp" type="email" name="email" title="email" placeholder="Username" required autofocus>
                     <input id="passwordSignUp" type="password" name="password" title="password" placeholder="Password" required>
-                    
+                    <div class="field">
+  <div class="control">
+  
+  <label class="label">Areas of Interest</label>
+    <label class="checkbox">
+      <input type="checkbox" id = "isDirector">
+      Director
+    </label>
+    <label class="checkbox">
+    <input type="checkbox"  id = "isProducer">
+    Producer
+  </label>
+  <label class="checkbox">
+  <input type="checkbox" id = "isStageManager">
+  Stage Manager
+</label>
+
+  <label class="checkbox">
+  <input type="checkbox" id = "isSetDesigner">
+  Set Designer
+</label>
+<label class="checkbox">
+<input type="checkbox" id = "isCostumer">
+Costumer
+
+
+</div>
+
+<div class="control">
+</label>
+<label class="checkbox">
+<input type="checkbox" id = "isLighting">
+Lighting Designer
+</label>
+
+<label class="checkbox">
+<input type="checkbox" id = "isSound">
+Sound Designer
+</label>
+
+<label class="checkbox">
+<input type="checkbox" id = "isProps">
+Props Master
+</label>
+
+<label class="checkbox">
+<input type="checkbox" id = "isWriter">
+Writer
+</label>
+
+
+<label class="checkbox">
+<input type="checkbox" id = "isExec">
+Executive
+</label>
+
+
+<label class="checkbox">
+<input type="checkbox" id = "isStagehand">
+Stagehand
+</label>
+
+
+<label class="label">Member of Alpha Psi Omega? <input type="checkbox"  id = "isMember" > </label>
+
+
+</div>
+</div>
                     <div class="field">
                         <div class="control">
                             <button type="submit" id = "signUp" class="btn btn-primary">Sign Up</button>
@@ -64,13 +131,7 @@ export const renderForms = function () {
        
 `
 
-
-
-
-
-
-
-
+ console.log($('#isMember').is(':checked'));
 $root.append(forms);
 $('#logIn').on("click", null, null, handleSubmitLogIn );
 
@@ -79,14 +140,10 @@ $('#signUp').on("click", null, null, handleSignUp);
 
 
 }
-
-
-
-
-
 export const handleSignUp = async function (event) {
     event.preventDefault();
     console.log($('#passwordSignUp').val())
+    console.log($('#isMember').val());
 
     // result of axios call 
     let r = axios.post('http://localhost:3000/account/create', {
@@ -95,10 +152,24 @@ export const handleSignUp = async function (event) {
         data: {
             fname: "" + $(`#fNameSignUp`).val() + "",
             lname: "" + $(`#lNameSignUp`).val() + "",
+            isMember: $('#isMember').is(':checked'),
+
+            isDirector: $('#isDirector').is(':checked'),
+            isProducer: $('#isProducer').is(':checked'),
+            isStageManager: $('#isStageManager').is(':checked'),
+            isCostumer: $('#isCostumer').is(':checked'),
+            isSetDesigner: $('#isSetDesigner').is(':checked'),
+            isLighting: $('#isLighting').is(':checked'),
+            isSound: $('#isSound').is(':checked'),
+            isWriter: $('#isWriter').is(':checked'),
+            isExec: $('#isExec').is(':checked'),
+            isProps: $('#isProps').is(':checked'),
+            isStagehand: $('#isStagehand').is(':checked'),
+
          
         }
     }).then(response => {
-        console.log("yo");
+        
         console.log(response.data);
     }).catch(error => {
         console.log(error);
@@ -113,6 +184,8 @@ export const handleSignUp = async function (event) {
             data: {
             fname: "" + $(`#fNameSignUp`).val() + "",
             lname: "" + $(`#lNameSignUp`).val() + "",
+            
+            isMember: $('#isMember').is(':checked')
          
         }}
     }).then(response => {
@@ -122,6 +195,8 @@ export const handleSignUp = async function (event) {
         console.log(error);
     });
 
+
+    // let r3 = axios.
 
 
 

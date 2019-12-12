@@ -460,6 +460,7 @@ export async function handlePostsTabClick(event) {
         
 
     console.log(response.data.result);
+    
 
     for(var key in response.data.result) {
         if(response.data.result.hasOwnProperty(key)) {

@@ -191,6 +191,41 @@
         "fname": "eehee",
         "lname": "eeehee"
       }
+    },
+    "mhsarks": {
+      "passwordHash": "$2a$10$Y7sB4L4EZYRJb/F2oAWQ9.DhWQboDhVjUp/UMHOVMZS60E.jdX0dy",
+      "data": {
+        "fname": "mikill",
+        "lname": "sponks",
+        "isMember": " "
+      }
+    },
+    "jmul": {
+      "passwordHash": "$2a$10$afCOou2pyR7MT3UAAQIUsO2g5Rjr0Ge2HWQG0aEGVjUFTNSRKfE0y",
+      "data": {
+        "fname": "john",
+        "lname": "mulaney",
+        "isMember": " true"
+      }
+    },
+    "bobr": {
+      "passwordHash": "$2a$10$xaKqWY5cYe6Zunz5FChKUejR4ljdWBlMrQpR2bXOjPE8rYqJDx68W",
+      "data": {
+        "fname": "bob",
+        "lname": "risketyely",
+        "isMember": true,
+        "isDirector": true,
+        "isProducer": false,
+        "isStageManager": false,
+        "isCostumer": false,
+        "isSetDesigner": false,
+        "isLighting": false,
+        "isSound": false,
+        "isWriter": false,
+        "isExec": false,
+        "isProps": false,
+        "isStagehand": false
+      }
     }
   }
 }
