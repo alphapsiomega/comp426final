@@ -105,7 +105,7 @@ export const handleSignUp = async function (event) {
     });
 
     window.location.href = "http://localhost:3001/index.html"
-    
+  
 
 }
 
@@ -127,26 +127,16 @@ export const handleSubmitLogIn = async function (event) {
     });
 
     // this creates a JWT token
-    
-
-
 
 
     var token = r.data.jwt;
-
-    // decoded token
+    localStorage.setItem('jwt', token);
     var decoded = parseJwt(token);
     
-
-
-
+    
     var username = decoded.name;
-
-
-    // decoded holds the JSON object
-
+    
    
-
 
     let request = axios.get('http://localhost:3000/account/status', 
     {
