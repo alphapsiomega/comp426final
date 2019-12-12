@@ -4,12 +4,15 @@
 export const renderForms = function () {
     const $root = $('#root'); // root is whatever has root as the ID
 
+    
+
     const forms = 
     `
     <div id="login">
             <div class="login-card">
                 <div class="card-title">
                     <h1 style="color: #F8DA17">Alpha Psi Omega Login</h1>
+                    
                 </div>
 
                 <div class="content">
@@ -25,8 +28,10 @@ export const renderForms = function () {
                             <p></p>
                             <div class="control">
                             <button type="submit" id = "logOut" class="btn btn-primary">Logout</button>
+                            
                         </div>
                         </div>
+                        
                         <p style="padding-bottom: 297px"></p>
 
                         <div class="field">

@@ -11,9 +11,12 @@
         <link rel="stylesheet" href="custom_style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="node_modules/bulma/css/bulma.css">
+        <script src="https://apis.google.com/js/api.js"></script>
+
 
     </head>
     <body>
+
         <div class="content has-text-centered">
             <div style="background-color: #003365; padding-bottom: 20px">
                 <img style="float: left; padding-top: 50px"src="ALPHA PSI OMEGA CREST.png" height="120px" width="120px">
@@ -33,12 +36,25 @@
                 </ul>
         </div>
     </body>
+    <div id="root">
+            
+        </div>
+        
     <div class="content has-text-centered">
     <iframe src="https://calendar.google.com/calendar/embed?src=h2bnhiemsq9boeqsn7f5gn0ab0%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
     </div>
     <!-- Include links to JavaScript files below -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAznpC8k7H8Zdm_700sk3GfW3EL9or6O6I&callback=initMap"
+  type="text/javascript"></script>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="node_modules/axios/dist/axios.min.js"></script>
     <script type="module" src="calendar.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+    
 </body>
 </html>

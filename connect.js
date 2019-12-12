@@ -5,6 +5,12 @@
 
 const $root = $('#root');
 
+//import axios from 'axios';
+
+
+
+
+
 /*
 let jwt = localStorage.getItem('jwt');
 console.log(jwt);
@@ -14,9 +20,283 @@ let decode = parseJwt(jwt);
 //let jwt = localStorage.getItem('jwt')
 //console.log("jwt is " + jwt);
 
+function autocomplete(inp, arr) {
+    /*the autocomplete function takes two arguments,
+    the text field element and an array of possible autocompleted values:*/
+    var currentFocus;
+    /*execute a function when someone writes in the text field:*/
+    inp.addEventListener("input", function(e) {
+        var a, b, i, val = this.value;
+        /*close any already open lists of autocompleted values*/
+        closeAllLists();
+        if (!val) { return false;}
+        currentFocus = -1;
+        /*create a DIV element that will contain the items (values):*/
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        /*append the DIV element as a child of the autocomplete container:*/
+        this.parentNode.appendChild(a);
+        /*for each item in the array...*/
+        for (i = 0; i < arr.length; i++) {
+          /*check if the item starts with the same letters as the text field value:*/
+          if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+            /*create a DIV element for each matching element:*/
+            b = document.createElement("DIV");
+            /*make the matching letters bold:*/
+            b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+            b.innerHTML += arr[i].substr(val.length);
+            /*insert a input field that will hold the current array item's value:*/
+            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+            /*execute a function when someone clicks on the item value (DIV element):*/
+                b.addEventListener("click", function(e) {
+                /*insert the value for the autocomplete text field:*/
+                inp.value = this.getElementsByTagName("input")[0].value;
+                /*close the list of autocompleted values,
+                (or any other open lists of autocompleted values:*/
+                closeAllLists();
+            });
+            a.appendChild(b);
+          }
+        }
+    });
+    /*execute a function presses a key on the keyboard:*/
+    inp.addEventListener("keydown", function(e) {
+        var x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+          /*If the arrow DOWN key is pressed,
+          increase the currentFocus variable:*/
+          currentFocus++;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 38) { //up
+          /*If the arrow UP key is pressed,
+          decrease the currentFocus variable:*/
+          currentFocus--;
+          /*and and make the current item more visible:*/
+          addActive(x);
+        } else if (e.keyCode == 13) {
+          /*If the ENTER key is pressed, prevent the form from being submitted,*/
+          e.preventDefault();
+          if (currentFocus > -1) {
+            /*and simulate a click on the "active" item:*/
+            if (x) x[currentFocus].click();
+          }
+        }
+    });
+    function addActive(x) {
+      /*a function to classify an item as "active":*/
+      if (!x) return false;
+      /*start by removing the "active" class on all items:*/
+      removeActive(x);
+      if (currentFocus >= x.length) currentFocus = 0;
+      if (currentFocus < 0) currentFocus = (x.length - 1);
+      /*add class "autocomplete-active":*/
+      x[currentFocus].classList.add("autocomplete-active");
+    }
+    function removeActive(x) {
+      /*a function to remove the "active" class from all autocomplete items:*/
+      for (var i = 0; i < x.length; i++) {
+        x[i].classList.remove("autocomplete-active");
+      }
+    }
+    function closeAllLists(elmnt) {
+      /*close all autocomplete lists in the document,
+      except the one passed as an argument:*/
+      var x = document.getElementsByClassName("autocomplete-items");
+      for (var i = 0; i < x.length; i++) {
+        if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+  }
+
 //this is to render the whole page. It will call the list render in it, which will call the 
 //membercard render, etc etc
+
+export async function handleSearchButtonPress(event) {
+
+
+    let search = document.getElementById('myInput').value;
+    console.log(search);
+
+    let r = `
+    <div class="container is-connect-box2" id="appBox">
+        <div>
+        <div class="is-top-bar">
+            <div class="is-post-button" id="postBox">
+                Click here to post!
+            </div>
+            <form>
+            
+            <div class="field">
+            <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width:300px;">
+              <input id="myInput" type="text" name="myCountry" placeholder="Search">
+            </div>
+          </form>
+                </div>
+                <div style="padding-bottom: 20px">
+                <div class="select is-rounded">
+                <select>
+                <option value="any">Anything</option>
+                <option value="actors">Acting</option>
+                <option value="directors">Directing</option>
+                <option value="producers">Producing</option>
+                <option value="costumes">Costuming</option>
+                <option value="props">Props</option>
+                <option value="set">Set</option>
+                <option value="makeup">Make-Up</option>
+                <option value="lighting">Lighting</option>
+                <option value="sound">Sound</option>
+                <option value="dramaturg">Dramaturg</option>
+                <option value="writing">Writing</option>
+                <option value="executive">Executive</option>
+                <option value="stagehand">Stagehand</option>
+                <option value="general">General</option>
+            </select>
+            </div>
+            </div>
+            <div style="padding-bottom: 30px">
+                <button type="submit" class="button is-white is-centered" id="search">Search</button>
+            </div>
+            <div class="columns">
+            <div class="column is-selected-left">
+                Users
+            </div>
+            <div class="column" style="color: #003365" id="posts">
+                Posts
+            </div>
+            </div>
+            </form>
+            
+        </div>
+        </div>
+        
+    `;
+
+    let jwt = localStorage.getItem('jwt');
+    //console.log(jwt);
+    let decode = parseJwt(jwt);
+
+    const response = await axios({
+        method: 'GET',
+        url: "http://localhost:3000/public/users",
+      });
+
+      let order=[];
+      let count=0;
+
+    for(var key in response.data.result) {
+        
+        if(response.data.result.hasOwnProperty(key)) {
+              
+                    //console.log(response.data.result[key].body);
+
+                    console.log(response.data.result[key]);
+                    
+                    //let str = response.data.result[key].body;
+                    //str = str.replace(/\s/g, '');
+                    //str = str.replace(/[.,'\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+                    //console.log(str);
+
+                    console.log("INFO IS" + ("" + response.data.result[key].data.fname + " "+ response.data.result[key].data.lname));
+                    console.log("SEARCH IS " + search);
+    
+                    if(search==("" + response.data.result[key].data.fname + " "+ response.data.result[key].data.lname)) {
+                        console.log("This happened");
+                        order[count]=`
+                        <div class="is-profile-card">
+                        <div class="columns">
+                            <div class="column">
+                                    <img class="is-profile-pic" width="50" height="50" src="OldWell.png">
+                            </div>
+                            <div class="column">
+                                <b>${response.data.result[key].data.fname} ${response.data.result[key].data.lname}</b></br>
+                                <span style:"color: #F8DA17">Senior</span>
+                            </div>
+                            <div class="column">
+                                <b>Director</b></br>
+                                Experienced
+                            </div>
+                            <div class="column">
+                                <b>Actor</b></br>
+                                Interested
+                            </div>
+                            <div class="column">
+                                <b>Producer</b></br>
+                                Competent
+                            </div>
+                            <div class="column">
+                                <button type="button" class="button is-warning" id="request">Request</button>
+                            </div>
+                        </div>
+                        </div>
+                        `;
+                    }
+
+                        //$root.on('click', "#"+(str), handleDeleteButtonPress);
+                    console.log(count);
+                    count++;
+            
+            
+        }
+    }
+
+    for(let i=order.length-1; i>=0; i--) {
+
+        console.log("One");
+
+        r+=order[i];
+
+    }
+
+    r+=`</div>`
+
+    $root.on('click', "#postBox", handlePostBoxClick);
+    $root.on('click', "#request", handleRequestButtonPress);
+    $root.on('click', "#posts", handlePostsTabClick);
+    $root.on('click', "#search", handleSearchButtonPress);
+    
+    
+    //
+
+    $('#appBox').replaceWith(r);
+
+
+
+}
 export async function renderPage() {
+
+    const a = await axios({
+        method: 'GET',
+        url: "http://localhost:3000/public/users",
+      });
+    
+      let arr=[];
+      let c=0;
+    
+    for(var key in a.data.result) {
+        
+        if(a.data.result.hasOwnProperty(key)) {
+
+            //console.log(a.data.result[key].data.fname);
+    
+            //arr[c] = "renis";
+            arr[c] = ""+a.data.result[key].data.fname + " " + a.data.result[key].data.lname;
+            console.log(arr[c]);
+            c++;
+            
+    
+        }
+    
+    }
 
     /*
     let appBox = `
@@ -42,9 +322,11 @@ export async function renderPage() {
             <form>
             
             <div class="field">
-                <div class="control" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
-                    <input class="input is-rounded" type="text" placeholder="Search">
-                </div>
+            <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width:300px;">
+              <input id="myInput" type="text" name="myCountry" placeholder="Search">
+            </div>
+          </form>
                 </div>
                 <div style="padding-bottom: 20px">
                 <div class="select is-rounded">
@@ -68,7 +350,7 @@ export async function renderPage() {
             </div>
             </div>
             <div style="padding-bottom: 30px">
-                <button type="submit" class="button is-white is-centered" id="submit">Search</button>
+                <button type="submit" class="button is-white is-centered" id="search">Search</button>
             </div>
             <div class="columns">
             <div class="column is-selected-left">
@@ -224,8 +506,15 @@ export async function renderPage() {
     $root.on('click', "#postBox", handlePostBoxClick);
     $root.on('click', "#request", handleRequestButtonPress);
     $root.on('click', "#posts", handlePostsTabClick);
+    $root.on('click', "#search", handleSearchButtonPress);
+    
+    
+    //
 
     $root.append(r);
+
+    console.log(document.getElementById("myInput"));
+    autocomplete(document.getElementById("myInput"), arr);
 
 }
 
@@ -373,6 +662,7 @@ export async function handleWelcomeButtonPress(event) {
                             </div>
                 </div>
                 <div style="padding-bottom: 20px">
+                <div class="select is-rounded">
                 <select>
                 <option value="any">Anything</option>
                 <option value="actors">Acting</option>
@@ -390,6 +680,7 @@ export async function handleWelcomeButtonPress(event) {
                 <option value="stagehand">Stagehand</option>
                 <option value="general">General</option>
             </select>
+            </div>
             </div>
             <div style="padding-bottom: 30px">
                 <button type="submit" class="button is-white is-centered" id="submit">Search</button>
@@ -507,6 +798,7 @@ export async function handlePostsTabClick(event) {
                             </div>
                 </div>
                 <div style="padding-bottom: 20px">
+                <div class="select is-rounded">
                 <select>
                 <option value="any">Anything</option>
                 <option value="actors">Acting</option>
@@ -524,6 +816,7 @@ export async function handlePostsTabClick(event) {
                 <option value="stagehand">Stagehand</option>
                 <option value="general">General</option>
             </select>
+            </div>
             </div>
             <div style="padding-bottom: 30px">
                 <button type="submit" class="button is-white is-centered" id="submit">Search</button>
@@ -656,6 +949,7 @@ else {
                             </div>
                 </div>
                 <div style="padding-bottom: 20px">
+                <div class="select is-rounded">
                 <select>
                 <option value="any">Anything</option>
                 <option value="actors">Acting</option>
@@ -673,6 +967,7 @@ else {
                 <option value="stagehand">Stagehand</option>
                 <option value="general">General</option>
             </select>
+            </div>
             </div>
             <div style="padding-bottom: 30px">
                 <button type="submit" class="button is-white is-centered" id="submit">Search</button>

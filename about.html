@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+            <style>
+                    /* Set the size of the div element that contains the map */
+                   #map {
+                     height: 400px;  /* The height is 400 pixels */
+                     width: 100%;  /* The width is the width of the web page */
+                    }
+                 </style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
@@ -55,11 +62,50 @@
                     </div>
                 </div>
         </div>
+<div class="has-text-centered">
+        <h3>Where to find us!</h3></br>
+        
+        <div id="demo"></div>
+            <!--The div element for the map -->
+            <div id="map"></div>
+            <button type="button" onclick="myFunction()" class="button is-black">Reset</button></br>
+            <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var cda = {lat: 35.912759, lng: -79.045283};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: cda});
 
-    </body>
+              
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: cda, map: map});
+
+          console.log(map.getBounds());
+        }
+        </script>
+        </div>
     <!-- Include links to JavaScript files below -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="node_modules/axios/dist/axios.min.js"></script>
     <script src="~bulma-carousel/dist/js/bulma-carousel.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAznpC8k7H8Zdm_700sk3GfW3EL9or6O6I&callback=initMap"
+  type="text/javascript"></script>
+  <script>
+        function myFunction() {
+          // The location of Uluru
+          var cda = {lat: 35.912759, lng: -79.045283};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 4, center: cda});
+
+              
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: cda, map: map});
+
+          console.log(map.getBounds());
+        }
+        </script>
 </body>
 </html>
