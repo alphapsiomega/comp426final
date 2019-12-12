@@ -167,17 +167,42 @@ export const handleSubmitLogIn = async function (event) {
 
     
     // this creates a JWT token
+<<<<<<< HEAD
+=======
 
 
     var token = r.data.jwt;
     localStorage.setItem('jwt', token);
     var decoded = parseJwt(token);
+>>>>>>> 66a43a47b2995eb6a185aa4cd8a5a38d3d5b8cd7
     
     
     var username = decoded.name;
     
    
 
+<<<<<<< HEAD
+
+
+
+    var token = r.data.jwt;
+
+    // decoded token
+    var decoded = parseJwt(token);
+    
+
+
+
+    var username = decoded.name;
+
+
+    // decoded holds the JSON object
+
+   
+
+
+=======
+>>>>>>> 66a43a47b2995eb6a185aa4cd8a5a38d3d5b8cd7
     let request = axios.get('http://localhost:3000/account/status', 
     {
         headers: {
