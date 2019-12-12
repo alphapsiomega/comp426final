@@ -266,6 +266,13 @@
         "isStagehand": false,
         "grade": "Junior"
       }
+    },
+    "nickg": {
+      "passwordHash": "$2a$10$lN72AO/YnQBHnNCWKmXN9OmITrlMWPchugOqs2RdaMDCnoWzxm4xu",
+      "data": {
+        "fname": "Nick",
+        "lname": "G"
+      }
     }
   }
 }

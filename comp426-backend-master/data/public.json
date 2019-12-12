@@ -1,4 +1,18 @@
 {
+  "posts": {
+    "Inneedofacooldude": {
+      "type": "post",
+      "body": "In need of a cool dude!",
+      "first": "ljenloe",
+      "last": "renis"
+    },
+    "BeaandMichaelfeelfreetopostthingsHere": {
+      "type": "post",
+      "body": "Bea and Michael feel free to post things Here",
+      "first": "ljenloe",
+      "last": "renis"
+    }
+  },
   "users": {
     "userastop": {
       "name": "astop",
@@ -7,6 +21,14 @@
         "fname": "ana",
         "lname": "stop",
         "isMember": true
+      }
+    },
+    "usernickg": {
+      "name": "nickg",
+      "pass": "gross",
+      "data": {
+        "fname": "Nick",
+        "lname": "G"
       }
     }
   }
