@@ -79,6 +79,97 @@
         "fname": "help",
         "lname": "help"
       }
+    },
+    "register": {
+      "passwordHash": "$2a$10$g67PODuZW33LJJX6Oo6YxOD9nPrM1f/AmCOj4vIkEDYI9qvkzMnIa",
+      "data": {
+        "fname": "test",
+        "lname": "test"
+      }
+    },
+    "tester": {
+      "passwordHash": "$2a$10$.UsgeFaSaEl8eRlwVyFNXOQgtxvealNGEL4xFsOZwyfwJF2bI4if6",
+      "data": {
+        "fname": "tester",
+        "lname": "tester"
+      }
+    },
+    "yeehee": {
+      "passwordHash": "$2a$10$rFEjFu6VkUkHUsjM1jWwJuLC6FDoHbod8CVC28ZNscNJC9Ns7ahDa",
+      "data": {
+        "fname": "yeehee",
+        "lname": "yeehee"
+      }
+    },
+    "testerr": {
+      "passwordHash": "$2a$10$Ov/qg8101r/znaG4aDmfBejbGCKSC6kOY.H.MH6KUqhKmKLXOX2gO",
+      "data": {
+        "fname": "testerr",
+        "lname": "testerr"
+      }
+    },
+    "aaa": {
+      "passwordHash": "$2a$10$SbmL08WHKamaws34HMimCeewZVIZ7IhC.d5vHDYNAGJjW1OMwxNrG",
+      "data": {
+        "fname": "aaa",
+        "lname": "aaa"
+      }
+    },
+    "please": {
+      "passwordHash": "$2a$10$Uy8MTQPdVIJsbF1Aabn1buHZsT.Yg6lPjLKy/HXaGKUWnHknPlxN.",
+      "data": {
+        "fname": "please",
+        "lname": "please"
+      }
+    },
+    "w": {
+      "passwordHash": "$2a$10$7573vcR9JYfde/ZaLPbA8uPwE7vxVgZrmJ.Mm6vr1qCkh2GtwJuzi",
+      "data": {
+        "fname": "work",
+        "lname": "work"
+      }
+    },
+    "hello": {
+      "passwordHash": "$2a$10$llFQyBx1GqF.FCKcqPYPL.YNCDL/4Wb2N8iWbzz7X3DF2cooOiJey",
+      "data": {
+        "fname": "hello",
+        "lname": "hello"
+      }
+    },
+    "log": {
+      "passwordHash": "$2a$10$cu8BPmpSKlWuZXzKp3JIXeUwAO23UDpQm5H/HqnlgLpXg0HmUgtWm",
+      "data": {
+        "fname": "log",
+        "lname": "log"
+      }
+    },
+    "testitng": {
+      "passwordHash": "$2a$10$6SFLOhPaoPlM.JNqktlUeuNsil51m6zKA6Rb9KgofYsGuKGdFhhJW",
+      "data": {
+        "fname": "test",
+        "lname": "test"
+      }
+    },
+    "heck": {
+      "passwordHash": "$2a$10$YzGYcA4/X4VBrMDGCt1i5OxpabOxRqAbKUvhSjvyx1tVTnmQu.D0S",
+      "data": {
+        "fname": "aaaaah",
+        "lname": "aaaaah"
+      }
+    },
+    "trying": {
+      "passwordHash": "$2a$10$ObXuK7AMYmg3CVeSlqBtHOAeqtJjgDlTC.6M94Z1izzupaYUoA/5K",
+      "data": {
+        "fname": "trying",
+        "lname": "trying"
+      }
+    },
+    "heck!!!": {
+      "passwordHash": "$2a$10$UaNGsNktyx8lpAHvp37Loe9uDDdfcMFQuHk40iSu0iKZp2mxLZ4ny",
+      "data": {
+        "fname": "heck!",
+        "lname": "heck!"
+      }
     }
   }
 }

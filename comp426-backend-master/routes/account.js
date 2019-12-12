@@ -29,6 +29,13 @@ router.get('/status', authenticateUser, function (req, res) {
   );
 });
 
+router.get('/users', authenticateUser, function (req, res) {
+  res.send( {
+    accountStore
+
+
+  })
+});
 /**
  * Given a name and pass, validates a user
  * and returns a JWT.

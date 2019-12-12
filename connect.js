@@ -5,9 +5,10 @@
 
 const $root = $('#root');
 
-let jwt = localStorage.getItem('jwt');
-console.log(jwt);
-let decode = parseJwt(jwt);
+// let jwt = localStorage.getItem('jwt');
+// console.log(jwt);
+// let decode = parseJwt(jwt);
+
 
 
 //let jwt = localStorage.getItem('jwt')
@@ -17,6 +18,7 @@ let decode = parseJwt(jwt);
 //membercard render, etc etc
 export async function renderPage() {
 
+    getUsers();
     let appBox = `
         <div class="container has-text-centered is-connect-box" id="appBox">
             <div id="replace">
@@ -46,7 +48,7 @@ export async function handlePostBoxClick(event) {
 
 export async function handleWelcomeButtonPress(event) {
 
-  console.log("Welcome, " + decode.data.fname);
+//   console.log("Welcome, " + decode.data.fname);
 
     
     
@@ -325,8 +327,13 @@ else {
         
     `;
 
+
+
+
     for(let i=0; i<50; i++){
         //alert("good lord");
+        // we need a way to access the names
+        // axios call
 
         if(i%2==0){
         r+=`
@@ -452,3 +459,41 @@ function parseJwt (token) {
 
     return JSON.parse(jsonPayload);
 };
+
+
+export const getUsers = function () {
+
+    
+  
+
+
+
+    // axios({
+    //     method: 'get',
+    //     url: 'https://localhost:3000/account/users',
+      
+    //     })
+    
+    
+    //     .then(response =>  {
+    //         // console.log(response.data)
+    //         // console.log(response.data[1].body);
+    //             loadTwitterFeed(response)
+            
+    //     }
+    
+       
+    //      ) .catch(error => console.log(error))
+
+
+    
+
+  
+
+   
+    
+    
+      
+   
+      
+}
