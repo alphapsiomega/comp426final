@@ -11,16 +11,17 @@ export const renderProfile = function () {
 
 
     let header = $(`
-
+    <div class="content has-text-centered">
     <h1 class="title is-1"> ${name} </h1>
     <h5 class="subtitle is-5">${grade}</h5>
+    </div>
 
     `)
 
 
     // for (let i = 0; i < 11; i ++) { // loops through all of the potential positions
 
-    let interests  = $('<div class="list is-hoverable">');
+    let interests  = $('<div style = "text-align: center" class="list is-hoverable">');
 
     console.log(decode.data.positions)
 
@@ -52,7 +53,7 @@ export const renderProfile = function () {
 
     if (decode.data.positions.isSetDesigner) {
         interests.append(`<a class="list-item" >
-        Costumer
+        Set Designer
        </a>`);
     }
 

@@ -267,46 +267,110 @@
         "grade": "Junior"
       }
     },
-
     "nickg": {
       "passwordHash": "$2a$10$lN72AO/YnQBHnNCWKmXN9OmITrlMWPchugOqs2RdaMDCnoWzxm4xu",
       "data": {
         "fname": "Nick",
         "lname": "G"
       },
-    "rapunzel": {
-      "passwordHash": "$2a$10$tXLZnb4L2YnfqZQnegcpJOvflUvin2gzDJlP2Gjb/3hptCVu8qifa",
-      "data": {
-        "fname": "princess",
-        "lname": "tangled",
-        "isMember": true,
-        "isDirector": false,
-        "isProducer": false,
-        "isStageManager": false,
-        "isCostumer": true,
-        "isSetDesigner": false,
-        "isLighting": false,
-        "isSound": false,
-        "isWriter": false,
-        "isExec": false,
-        "isProps": false,
-        "isStagehand": false,
-        "grade": "Freshman"
-      }
-    },
-    "white": {
-      "passwordHash": "$2a$10$cBAPUjLwBk2U.rBdD5Ha1uOQaAvlYe4.2l//zSuZ61xSgADsTRrFS",
-      "data": {
-        "fname": "snow",
-        "lname": "white",
-        "isMember": true,
-        "positions": {
+      "rapunzel": {
+        "passwordHash": "$2a$10$tXLZnb4L2YnfqZQnegcpJOvflUvin2gzDJlP2Gjb/3hptCVu8qifa",
+        "data": {
+          "fname": "princess",
+          "lname": "tangled",
+          "isMember": true,
           "isDirector": false,
+          "isProducer": false,
+          "isStageManager": false,
+          "isCostumer": true,
+          "isSetDesigner": false,
+          "isLighting": false,
+          "isSound": false,
+          "isWriter": false,
+          "isExec": false,
+          "isProps": false,
+          "isStagehand": false,
+          "grade": "Freshman"
+        }
+      },
+      "white": {
+        "passwordHash": "$2a$10$cBAPUjLwBk2U.rBdD5Ha1uOQaAvlYe4.2l//zSuZ61xSgADsTRrFS",
+        "data": {
+          "fname": "snow",
+          "lname": "white",
+          "isMember": true,
+          "positions": {
+            "isDirector": false,
+            "isProducer": false,
+            "isStageManager": false,
+            "isCostumer": false,
+            "isSetDesigner": false,
+            "isLighting": true,
+            "isSound": false,
+            "isWriter": false,
+            "isExec": false,
+            "isProps": false,
+            "isStagehand": false
+          },
+          "grade": "Sophomore"
+        }
+      },
+      "babie": {
+        "passwordHash": "$2a$10$hCeHEIPuSxuVr0oPSKoeG.en.Zfe0Y8qHzif0Zxtj7JjUCB9r1a3S",
+        "data": {
+          "fname": "baybee",
+          "lname": "baybee",
+          "isMember": true,
+          "positions": {
+            "isDirector": true,
+            "isProducer": false,
+            "isStageManager": false,
+            "isCostumer": false,
+            "isSetDesigner": true,
+            "isLighting": true,
+            "isSound": false,
+            "isWriter": false,
+            "isExec": false,
+            "isProps": false,
+            "isStagehand": false
+          },
+          "grade": "Freshman"
+        }
+      },
+      "jaka": {
+        "passwordHash": "$2a$10$64GoKy7trtKUUiayJbFlcOdqq7YhCNAkEM4XuXq2XX7Tp8OCgcQb2",
+        "data": {
+          "fname": "Jak",
+          "lname": "A",
+          "isMember": false,
+          "isDirector": true,
           "isProducer": false,
           "isStageManager": false,
           "isCostumer": false,
           "isSetDesigner": false,
-          "isLighting": true,
+          "isLighting": false,
+          "isSound": false,
+          "isWriter": false,
+          "isExec": false,
+          "isProps": false,
+          "isStagehand": false,
+          "grade": "Freshman"
+        }
+      }
+    },
+    "mary": {
+      "passwordHash": "$2a$10$LaK6io9PjL5FvsAKi4BSt.2JOEZ5iBq8CMfnFLjy3K1LGnUrwjdIS",
+      "data": {
+        "fname": "Mary",
+        "lname": "Kan",
+        "isMember": false,
+        "positions": {
+          "isDirector": false,
+          "isProducer": true,
+          "isStageManager": false,
+          "isCostumer": false,
+          "isSetDesigner": false,
+          "isLighting": false,
           "isSound": false,
           "isWriter": false,
           "isExec": false,
@@ -316,19 +380,63 @@
         "grade": "Sophomore"
       }
     },
-    "babie": {
-      "passwordHash": "$2a$10$hCeHEIPuSxuVr0oPSKoeG.en.Zfe0Y8qHzif0Zxtj7JjUCB9r1a3S",
+    "larry": {
+      "passwordHash": "$2a$10$zsUTUKGFMMtAcXepx9r4vO.JUsvrDoxjo.TxWPEMJwfwR1dDivDIa",
       "data": {
-        "fname": "baybee",
-        "lname": "baybee",
-        "isMember": true,
+        "fname": "Larry",
+        "lname": "Dane",
+        "isMember": false,
         "positions": {
-          "isDirector": true,
+          "isDirector": false,
           "isProducer": false,
           "isStageManager": false,
           "isCostumer": false,
+          "isSetDesigner": false,
+          "isLighting": false,
+          "isSound": false,
+          "isWriter": false,
+          "isExec": false,
+          "isProps": false,
+          "isStagehand": false
+        },
+        "grade": "Senior"
+      }
+    },
+    "barry": {
+      "passwordHash": "$2a$10$iOaOq7oEtvn1YnUT6/8I9uXwiPof0w0Pkzlnb0rICV/IJ1eZ18R4.",
+      "data": {
+        "fname": "Barry",
+        "lname": "Navalinsky",
+        "isMember": false,
+        "positions": {
+          "isDirector": false,
+          "isProducer": false,
+          "isStageManager": true,
+          "isCostumer": true,
           "isSetDesigner": true,
-          "isLighting": true,
+          "isLighting": false,
+          "isSound": false,
+          "isWriter": false,
+          "isExec": false,
+          "isProps": false,
+          "isStagehand": false
+        },
+        "grade": "Senior"
+      }
+    },
+    "apple": {
+      "passwordHash": "$2a$10$K36OxPTwY9SOcyNkHZVU7.TWH3ltAufXj8A8H3R89zxyhM3uEPLwy",
+      "data": {
+        "fname": "Apple",
+        "lname": "Jerry",
+        "isMember": false,
+        "positions": {
+          "isDirector": false,
+          "isProducer": false,
+          "isStageManager": true,
+          "isCostumer": false,
+          "isSetDesigner": false,
+          "isLighting": false,
           "isSound": false,
           "isWriter": false,
           "isExec": false,
@@ -337,27 +445,6 @@
         },
         "grade": "Freshman"
       }
-    },
-    "jaka": {
-      "passwordHash": "$2a$10$64GoKy7trtKUUiayJbFlcOdqq7YhCNAkEM4XuXq2XX7Tp8OCgcQb2",
-      "data": {
-        "fname": "Jak",
-        "lname": "A",
-        "isMember": false,
-        "isDirector": true,
-        "isProducer": false,
-        "isStageManager": false,
-        "isCostumer": false,
-        "isSetDesigner": false,
-        "isLighting": false,
-        "isSound": false,
-        "isWriter": false,
-        "isExec": false,
-        "isProps": false,
-        "isStagehand": false,
-        "grade": "Freshman"
-      }
     }
   }
-}
 }

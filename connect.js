@@ -133,35 +133,18 @@ export async function handleSearchButtonPress(event) {
             <div class="is-post-button" id="postBox">
                 Click here to post!
             </div>
+            <p></p>
             <form>
             
             <div class="field">
             <form autocomplete="off" action="/action_page.php">
-            <div class="autocomplete" style="width:300px;">
-              <input id="myInput" type="text" name="myCountry" placeholder="Search">
+            <div class="autocomplete" style="width:300px; padding-top: 20px; margin: auto; text-align: center">
+              <input class="input is-rounded" id="myInput" type="text" name="myCountry" placeholder="Search" width="500">
             </div>
           </form>
                 </div>
                 <div style="padding-bottom: 20px">
-                <div class="select is-rounded">
-                <select>
-                <option value="any">Anything</option>
-                <option value="actors">Acting</option>
-                <option value="directors">Directing</option>
-                <option value="producers">Producing</option>
-                <option value="costumes">Costuming</option>
-                <option value="props">Props</option>
-                <option value="set">Set</option>
-                <option value="makeup">Make-Up</option>
-                <option value="lighting">Lighting</option>
-                <option value="sound">Sound</option>
-                <option value="dramaturg">Dramaturg</option>
-                <option value="writing">Writing</option>
-                <option value="executive">Executive</option>
-                <option value="stagehand">Stagehand</option>
-                <option value="general">General</option>
-            </select>
-            </div>
+                
             </div>
             <div style="padding-bottom: 30px">
                 <button type="submit" class="button is-white is-centered" id="search">Search</button>
@@ -319,35 +302,18 @@ export async function renderPage() {
             <div class="is-post-button" id="postBox">
                 Click here to post!
             </div>
+            <p></p>
             <form>
             
             <div class="field">
             <form autocomplete="off" action="/action_page.php">
-            <div class="autocomplete" style="width:300px;">
-              <input id="myInput" type="text" name="myCountry" placeholder="Search">
+            <div class="autocomplete" style="width:300px; padding-top: 20px; margin: auto; text-align: center">
+              <input class="input is-rounded" id="myInput" type="text" name="myCountry" placeholder="Search" width="500">
             </div>
           </form>
                 </div>
                 <div style="padding-bottom: 20px">
-                <div class="select is-rounded">
-                <select>
-                <option value="any">Anything</option>
-                <option value="actors">Acting</option>
-                <option value="directors">Directing</option>
-                <option value="producers">Producing</option>
-                <option value="costumes">Costuming</option>
-                <option value="props">Props</option>
-                <option value="set">Set</option>
-                <option value="makeup">Make-Up</option>
-                <option value="lighting">Lighting</option>
-                <option value="sound">Sound</option>
-                <option value="dramaturg">Dramaturg</option>
-                <option value="writing">Writing</option>
-                <option value="executive">Executive</option>
-                <option value="stagehand">Stagehand</option>
-                <option value="general">General</option>
-            </select>
-            </div>
+                
             </div>
             <div style="padding-bottom: 30px">
                 <button type="submit" class="button is-white is-centered" id="search">Search</button>
@@ -790,36 +756,21 @@ export async function handlePostsTabClick(event) {
             <div class="is-post-button" id="postBox">
                 Click here to post!
             </div>
+            <p></p>
             <form>
             
             <div class="field">
-                            <div class="control" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
-                                    <input class="input is-rounded" type="text" placeholder="Search">
-                            </div>
+            <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width:300px; padding-top: 20px; margin: auto; text-align: center">
+              <input class="input is-rounded" id="myInput" type="text" name="myCountry" placeholder="Search" width="500">
+            </div>
+          </form>
                 </div>
                 <div style="padding-bottom: 20px">
-                <div class="select is-rounded">
-                <select>
-                <option value="any">Anything</option>
-                <option value="actors">Acting</option>
-                <option value="directors">Directing</option>
-                <option value="producers">Producing</option>
-                <option value="costumes">Costuming</option>
-                <option value="props">Props</option>
-                <option value="set">Set</option>
-                <option value="makeup">Make-Up</option>
-                <option value="lighting">Lighting</option>
-                <option value="sound">Sound</option>
-                <option value="dramaturg">Dramaturg</option>
-                <option value="writing">Writing</option>
-                <option value="executive">Executive</option>
-                <option value="stagehand">Stagehand</option>
-                <option value="general">General</option>
-            </select>
-            </div>
+                
             </div>
             <div style="padding-bottom: 30px">
-                <button type="submit" class="button is-white is-centered" id="submit">Search</button>
+                <button type="submit" class="button is-white is-centered" id="search">Search</button>
             </div>
             <div class="columns">
             <div class="column" style="color: #003365" id="users">
@@ -941,36 +892,21 @@ else {
             <div class="is-post-button" id="postBox">
                 Click here to post!
             </div>
+            <p></p>
             <form>
             
             <div class="field">
-                            <div class="control" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
-                                    <input class="input is-rounded" type="text" placeholder="Search">
-                            </div>
+            <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete" style="width:300px; padding-top: 20px; margin: auto; text-align: center">
+              <input class="input is-rounded" id="myInput" type="text" name="myCountry" placeholder="Search" width="500">
+            </div>
+          </form>
                 </div>
                 <div style="padding-bottom: 20px">
-                <div class="select is-rounded">
-                <select>
-                <option value="any">Anything</option>
-                <option value="actors">Acting</option>
-                <option value="directors">Directing</option>
-                <option value="producers">Producing</option>
-                <option value="costumes">Costuming</option>
-                <option value="props">Props</option>
-                <option value="set">Set</option>
-                <option value="makeup">Make-Up</option>
-                <option value="lighting">Lighting</option>
-                <option value="sound">Sound</option>
-                <option value="dramaturg">Dramaturg</option>
-                <option value="writing">Writing</option>
-                <option value="executive">Executive</option>
-                <option value="stagehand">Stagehand</option>
-                <option value="general">General</option>
-            </select>
-            </div>
+                
             </div>
             <div style="padding-bottom: 30px">
-                <button type="submit" class="button is-white is-centered" id="submit">Search</button>
+                <button type="submit" class="button is-white is-centered" id="search">Search</button>
             </div>
             <div class="columns">
             <div class="column is-selected-left">

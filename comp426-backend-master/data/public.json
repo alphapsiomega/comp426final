@@ -1,22 +1,22 @@
 {
   "posts": {
-    "makinganewposthere": {
+    "Upcomingshow": {
       "type": "post",
-      "body": "making a new post here!",
-      "first": "ljenloe",
-      "last": "renis"
+      "body": "Upcoming show!",
+      "first": "Mary",
+      "last": "Kan"
     },
-    "NewpostthatImmaking": {
+    "Thrilledandexcitedtobeinthiscast": {
       "type": "post",
-      "body": "New post that I'm making",
-      "first": "ljenloe",
-      "last": "renis"
+      "body": "Thrilled and excited to be in this cast!",
+      "first": "Apple",
+      "last": "Jerry"
     },
-    "Postanything": {
+    "LoveUNCTheatre": {
       "type": "post",
-      "body": "Post anything",
-      "first": "ljenloe",
-      "last": "renis"
+      "body": "Love UNC Theatre!",
+      "first": "Barry",
+      "last": "Navalinsky"
     }
   },
   "users": {
@@ -71,6 +71,24 @@
           "lname": "A",
           "isMember": false
         }
+      }
+    },
+    "usermary": {
+      "name": "mary",
+      "pass": "test",
+      "data": {
+        "fname": "Mary",
+        "lname": "Kan",
+        "isMember": false
+      }
+    },
+    "userapple": {
+      "name": "apple",
+      "pass": "test",
+      "data": {
+        "fname": "Apple",
+        "lname": "Jerry",
+        "isMember": false
       }
     }
   }
