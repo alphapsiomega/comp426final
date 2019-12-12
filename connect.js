@@ -8,10 +8,6 @@ const $root = $('#root');
 // let jwt = localStorage.getItem('jwt');
 // console.log(jwt);
 // let decode = parseJwt(jwt);
-<<<<<<< HEAD
-
-=======
->>>>>>> a846a5948a6b193a9ee95ce03bb0ce179b8b2a31
 
 
 //let jwt = localStorage.getItem('jwt')
