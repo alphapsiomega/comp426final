@@ -87,6 +87,76 @@ export async function renderPage() {
         
     `;
 
+    let jwt = localStorage.getItem('jwt');
+    //console.log(jwt);
+    let decode = parseJwt(jwt);
+
+    const response = await axios({
+        method: 'GET',
+        url: "http://localhost:3000/public/users",
+      });
+
+      let order=[];
+      let count=0;
+
+    for(var key in response.data.result) {
+        
+        if(response.data.result.hasOwnProperty(key)) {
+              
+                    //console.log(response.data.result[key].body);
+
+                    console.log(response.data.result[key]);
+                    
+                    //let str = response.data.result[key].body;
+                    //str = str.replace(/\s/g, '');
+                    //str = str.replace(/[.,'\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+                    //console.log(str);
+    
+                        console.log(key);
+                        order[count]=`
+                        <div class="is-profile-card">
+                        <div class="columns">
+                            <div class="column">
+                                    <img class="is-profile-pic" width="50" height="50" src="OldWell.png">
+                            </div>
+                            <div class="column">
+                                <b>${response.data.result[key].data.fname} ${response.data.result[key].data.lname}</b></br>
+                                <span style:"color: #F8DA17">Senior</span>
+                            </div>
+                            <div class="column">
+                                <b>Director</b></br>
+                                Experienced
+                            </div>
+                            <div class="column">
+                                <b>Actor</b></br>
+                                Interested
+                            </div>
+                            <div class="column">
+                                <b>Producer</b></br>
+                                Competent
+                            </div>
+                            <div class="column">
+                                <button type="button" class="button is-warning" id="request">Request</button>
+                            </div>
+                        </div>
+                        </div>
+                        `;
+
+                        //$root.on('click', "#"+(str), handleDeleteButtonPress);
+                    console.log(count);
+                    count++;
+            
+            
+        }
+    }
+
+    for(let i=order.length-1; i>=0; i--) {
+
+        r+=order[i];
+
+    }
+
+    /*
     for(let i=0; i<50; i++){
         //alert("good lord");
 
@@ -153,6 +223,8 @@ export async function renderPage() {
 
         }
     }
+
+    */
     r+=`</div>`
 
     $root.on('click', "#postBox", handlePostBoxClick);
@@ -187,13 +259,17 @@ export async function handlePostButtonPress(event) {
     console.log(jwt);
     let decode = parseJwt(jwt);
 
+    let str = textContent;
+                    str = str.replace(/\s/g, '');
+                    str = str.replace(/[.,'\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+
     console.log(decode.data.fname);
     
     try {
     
     const response = await axios({
         method: 'POST',
-        url: "http://localhost:3000/public/posts/"+jwt+textContent,
+        url: "http://localhost:3000/public/posts/"+str,
         data: {
             data: {
                 "type": "post",
@@ -255,6 +331,28 @@ export async function renderUserList (event) {
        
          ) .catch(error => console.log(error))
         */
+
+}
+
+export async function handleDeleteButtonPress(event) {
+
+    alert("ueah")
+
+    event.preventDefault();
+
+    let jwt = localStorage.getItem('jwt');
+    console.log(jwt);
+    let decode = parseJwt(jwt);
+
+    let deleteId = event.target.getAttribute("id");
+
+    
+        const result = await axios({
+            method: 'delete',
+            url: "http://localhost:3000/public/posts/" + deleteId,
+          }); 
+
+    
 
 }
 
@@ -475,6 +573,13 @@ export async function handlePostsTabClick(event) {
         if(response.data.result.hasOwnProperty(key)) {
               
                     //console.log(response.data.result[key].body);
+
+                    console.log(response.data.result[key].body);
+                    
+                    let str = response.data.result[key].body;
+                    str = str.replace(/\s/g, '');
+                    str = str.replace(/[.,'\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+                    console.log(str);
     
                         console.log(key);
                         order[count]=`
@@ -491,12 +596,13 @@ export async function handlePostsTabClick(event) {
                                 ${response.data.result[key].body}
                             </div>
                             <div class="column">
-                                <button type="button" class="button is-warning" id="request">Request</button>
+                                <button type="button" class="button is-danger" id="${str}">Delete</button>
                             </div>
                         </div>
                         </div>
                         `;
 
+                        $root.on('click', "#"+(str), handleDeleteButtonPress);
                     console.log(count);
                     count++;
             
@@ -672,6 +778,8 @@ else {
     $('#appBox').replaceWith(r);
     $(document).off();
     $root.on('click', "#users", handlePostsTabClick);
+    
+
 
 
 }

@@ -1,66 +1,14 @@
 {
   "posts": {
-    "type": "post",
-    "body": "postthing",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseo": {
-      "add new": {
-        "type": "post",
-        "body": "add new"
-      },
-      "test post": {
-        "type": "post",
-        "body": "test post"
-      },
-      "test post 2": {
-        "type": "post",
-        "body": "test post 2"
-      }
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseofirst post": {
+    "Inneedofacooldude": {
       "type": "post",
-      "body": "first post"
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseosecond post": {
-      "type": "post",
-      "body": "second post"
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseopost .now": {
-      "type": "post",
-      "body": "post .now"
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseopost time": {
-      "type": "post",
-      "body": "post time"
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseoreen": {
-      "type": "post",
-      "body": "reen"
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseoNew post!": {
-      "type": "post",
-      "body": "New post!"
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseoother post": {
-      "type": "post",
-      "body": "other post"
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseoPlease help! I need an actor. Sincerely, Andrei": {
-      "type": "post",
-      "body": "Please help! I need an actor. Sincerely, Andrei"
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseoPlease help me!": {
-      "type": "post",
-      "body": "Please help me!"
-    },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseoandrei is killing me": {
-      "type": "post",
-      "body": "andrei is killing me",
+      "body": "In need of a cool dude!",
       "first": "ljenloe",
       "last": "renis"
     },
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibGplbmxvZSIsImRhdGEiOnsiZm5hbWUiOiJsamVubG9lIiwibG5hbWUiOiJyZW5pcyJ9LCJpYXQiOjE1NzYxMjI1NDMsImV4cCI6MTU3ODcxNDU0M30.a4fNztfYUlo\\-aWmaVj8PBEZ3KVEU9imT7wo3OUpuseoNeed a crew for my new Rogue Theatre Company I'm creating! LAB! was such a success I decided we needed a sequel!": {
+    "BeaandMichaelfeelfreetopostthingsHere": {
       "type": "post",
-      "body": "Need a crew for my new Rogue Theatre Company I'm creating! LAB! was such a success I decided we needed a sequel!",
+      "body": "Bea and Michael feel free to post things Here",
       "first": "ljenloe",
       "last": "renis"
     }
@@ -88,6 +36,14 @@
       "data": {
         "fname": "Reeb",
         "lname": "Scothorn"
+      }
+    },
+    "usernickg": {
+      "name": "nickg",
+      "pass": "gross",
+      "data": {
+        "fname": "Nick",
+        "lname": "G"
       }
     }
   }
