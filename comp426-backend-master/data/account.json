@@ -38,46 +38,18 @@
         "lname": "lab"
       }
     },
-    "justbeatesting": {
-      "passwordHash": "$2a$10$26g/k9XpVaHAG9sFE.F3R.yQ52JfVTsYFQnrkDSzBzbHrz0ES7XOG",
+    "anyidea": {
+      "passwordHash": "$2a$10$qlSk.Ook6iTwQ/7Ak5ga.OPkAyQNik4oKFfITZsRWdJUINPVaU/ga",
       "data": {
-        "fname": "Bea",
-        "lname": "Manaligod"
+        "fname": "tesingfor",
+        "lname": "issue"
       }
     },
-    "labtheatreboard": {
-      "passwordHash": "$2a$10$4v81steUtm3shRjNgHWZEu0YsFN62PSbHw9UtZmo.sdjxdqsQeDSG",
+    "samyancey": {
+      "passwordHash": "$2a$10$Q6RXHTd3/dy37OSbmsY6JOgwTg7y0C8lG4PHoR82VPQb1Ej.rtwm2",
       "data": {
-        "fname": "stan",
-        "lname": "lab"
-      }
-    },
-    "beam": {
-      "passwordHash": "$2a$10$8YRaoZ66rlsKhJQaNiUGru/bB8ykILDsEvkliXKMi8GZIuGXngedG",
-      "data": {
-        "fname": "bea",
-        "lname": "m"
-      }
-    },
-    "testcreate": {
-      "passwordHash": "$2a$10$kbJIwLe23/TrAExjWuOmGOiepr3/rBKs6Ai15HX5t8RY4njl5zdk.",
-      "data": {
-        "fname": "test",
-        "lname": "create"
-      }
-    },
-    "test": {
-      "passwordHash": "$2a$10$MBbGISqyRSpf2k.7wDkw2OkS4/qdofN/GoxJoTGw49KHnCx9V8SIO",
-      "data": {
-        "fname": "test",
-        "lname": "test"
-      }
-    },
-    "help": {
-      "passwordHash": "$2a$10$mnvlj6q2VH1gIGdII.OEIu9pzAJ3dlxk/5ZRoHDK0A4QoK5TWvw56",
-      "data": {
-        "fname": "help",
-        "lname": "help"
+        "fname": "Sam",
+        "lname": "Yancey"
       }
     }
   }
