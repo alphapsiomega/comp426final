@@ -98,22 +98,58 @@ export const handleSignUp = async function (event) {
          
         }
     }).then(response => {
-        alert("hi");
+        console.log("yo");
+        console.log(response.data);
+    }).catch(error => {
+        console.log(error);
+    });
+    
+    let id = $('#userSignUp').val();
+    let r2 = axios.post('http://localhost:3000/public/users/user' + id, {
+        
+        data: {
+            name: "" + $(`#userSignUp`).val() + "",
+            pass: "" + $(`#passwordSignUp`).val() + "",
+            data: {
+            fname: "" + $(`#fNameSignUp`).val() + "",
+            lname: "" + $(`#lNameSignUp`).val() + "",
+         
+        }}
+    }).then(response => {
+        console.log("yee");
         console.log(response.data);
     }).catch(error => {
         console.log(error);
     });
 
-    window.location.href = "http://localhost:3001/index.html"
+
+
+
+    // let r2 = await axios ({
+    //     method: "post",
+    //     url: "http://localhost:3000/public/users",
+    //     data: {
+    //         data: {
+    //             name: "" + $('#userSignUp').val() + "",
+    //             pass: "" + $('#passwordSignUp').val() + ""
+    //         }
+          
+            
+            
+    //     }
+    // }).then(response => {
+    //     console.log("hi");
+    //     console.log(response.data);
+    // }).catch(error => {
+    //     console.log(error);
+    // });
+   window.location.href = "http://localhost:3001/myProfile.html"
   
-
 }
-
 
 
 export const handleSubmitLogIn = async function (event) {
     event.preventDefault();
-
     console.log($('#userLogin').val());
     console.log($('#passwordLogin').val());
     // result of axios call 
@@ -126,17 +162,35 @@ export const handleSubmitLogIn = async function (event) {
         }
     });
 
+    
+
+
+    
     // this creates a JWT token
-
-
-    var token = r.data.jwt;
-    localStorage.setItem('jwt', token);
-    var decoded = parseJwt(token);
     
     
     var username = decoded.name;
     
    
+
+
+
+
+    var token = r.data.jwt;
+
+    // decoded token
+    var decoded = parseJwt(token);
+    
+
+
+
+    var username = decoded.name;
+
+
+    // decoded holds the JSON object
+
+   
+
 
     let request = axios.get('http://localhost:3000/account/status', 
     {
@@ -145,21 +199,16 @@ export const handleSubmitLogIn = async function (event) {
         }
     }
 );
-    
-
-
     request.then(response => {
    
-        
         //  window.location.href = "http://localhost:3001/index.html"
-        //  alert("authenticated as " + r.data.name)
-         
-        // alert("signed in as " + response.data.fname);
        
     }). catch (error => {
         console.log("failed to authenticate")
         alert(error);
     });  
+
+    window.location.href = "http://localhost:3001/myProfile.html"
 
 }
 

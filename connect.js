@@ -165,7 +165,7 @@ export async function renderPage() {
 
 export async function handlePostBoxClick(event) {
 
-    event.preventDefault;
+    // event.preventDefault();
     let r = `<div id="textype">
     <textarea class="postText" id="textToPost"></textarea>
     </div>
@@ -224,9 +224,38 @@ export async function handlePostButtonPress(event) {
 
 }
 
+
+export async function renderUserList (event) {
+    // event.preventDefault();
+
+    axios({
+        method: 'get',
+        url: 'http://localhost:3000/public/users',
+
+        })
+    
+    
+        .then(response =>  {
+            // console.log(response.data)
+            // console.log(response.data[1].body);
+          
+                console.log(response.data.result);
+                for (var key in response.data.result) {
+                    if (response.data.result.hasOwnProperty(key)) {
+                        console.log(response.data.result[key].data.fname);
+                    }
+    
+            
+        }}
+    
+       
+         ) .catch(error => console.log(error))
+        
+
+}
 export async function handleWelcomeButtonPress(event) {
 
-  //console.log("Welcome, " + decode.data.fname);
+//   console.log("Welcome, " + decode.data.fname);
 
     
     
@@ -542,8 +571,13 @@ else {
         
     `;
 
+
+
+
     for(let i=0; i<50; i++){
         //alert("good lord");
+        // we need a way to access the names
+        // axios call
 
         if(i%2==0){
         r+=`
@@ -648,6 +682,7 @@ function renderMemberCard() {
 }
 $(function () {
     renderPage();
+    renderUserList();
 });
 // Stuff
 const debounce = (fn, time) => {
@@ -670,3 +705,5 @@ function parseJwt (token) {
 
     return JSON.parse(jsonPayload);
 };
+
+

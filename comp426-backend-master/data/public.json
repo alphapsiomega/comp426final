@@ -49,4 +49,22 @@
     "type": "post",
     "body": "does it work with more than one word"
   }
+  "users": {
+    "usereehee": {
+      "name": "eehee",
+      "pass": "eehee",
+      "data": {
+        "fname": "eehee",
+        "lname": "eehee"
+      }
+    },
+    "useraaaa": {
+      "name": "aaaa",
+      "pass": "aaaa",
+      "data": {
+        "fname": "aaaa",
+        "lname": "aaaa"
+      }
+    }
+  }
 }
