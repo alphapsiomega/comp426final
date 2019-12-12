@@ -246,6 +246,26 @@
         "isStagehand": false,
         "grade": "Freshman"
       }
+    },
+    "astop": {
+      "passwordHash": "$2a$10$6hHwXXYJIFkRbHve8D7PTeifYZlf.1SgUUx5/V1JQ2O0i1WuKxaim",
+      "data": {
+        "fname": "ana",
+        "lname": "stop",
+        "isMember": true,
+        "isDirector": false,
+        "isProducer": false,
+        "isStageManager": true,
+        "isCostumer": false,
+        "isSetDesigner": false,
+        "isLighting": false,
+        "isSound": false,
+        "isWriter": false,
+        "isExec": false,
+        "isProps": false,
+        "isStagehand": false,
+        "grade": "Junior"
+      }
     }
   }
 }

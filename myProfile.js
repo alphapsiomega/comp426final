@@ -18,16 +18,16 @@ export const renderProfile = function () {
     `)
 
 
-    let interests = $(`
+    // let interests = $(`
     
     
-    `)
+    // `)
     
 
-    let interests = $(`
+    // let interests = $(`
     
     
-    `)
+    // `)
     
     $root.append(header)
 
