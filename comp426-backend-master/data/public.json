@@ -14,28 +14,13 @@
     }
   },
   "users": {
-    "usereehee": {
-      "name": "eehee",
-      "pass": "eehee",
+    "userastop": {
+      "name": "astop",
+      "pass": "haha",
       "data": {
-        "fname": "eehee",
-        "lname": "eehee"
-      }
-    },
-    "useraaaa": {
-      "name": "aaaa",
-      "pass": "aaaa",
-      "data": {
-        "fname": "aaaa",
-        "lname": "aaaa"
-      }
-    },
-    "userreeb": {
-      "name": "reeb",
-      "pass": "lab",
-      "data": {
-        "fname": "Reeb",
-        "lname": "Scothorn"
+        "fname": "ana",
+        "lname": "stop",
+        "isMember": true
       }
     },
     "usernickg": {
