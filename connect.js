@@ -227,6 +227,7 @@ export async function handlePostButtonPress(event) {
 
 export async function renderUserList (event) {
     // event.preventDefault();
+    /*
 
     axios({
         method: 'get',
@@ -250,9 +251,10 @@ export async function renderUserList (event) {
     
        
          ) .catch(error => console.log(error))
-        
+        */
 
 }
+
 export async function handleWelcomeButtonPress(event) {
 
 //   console.log("Welcome, " + decode.data.fname);
@@ -655,6 +657,7 @@ else {
 }
 
 export async function handleRequestButtonPress(event) {
+
 
     //alert("anything");
     event.preventDefault();
