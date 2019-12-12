@@ -46,11 +46,12 @@ export async function renderPage() {
             <form>
             
             <div class="field">
-                            <div class="control" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
-                                    <input class="input is-rounded" type="text" placeholder="Search">
-                            </div>
+                <div class="control" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
+                    <input class="input is-rounded" type="text" placeholder="Search">
+                </div>
                 </div>
                 <div style="padding-bottom: 20px">
+                <div class="select is-rounded">
                 <select>
                 <option value="any">Anything</option>
                 <option value="actors">Acting</option>
@@ -68,6 +69,7 @@ export async function renderPage() {
                 <option value="stagehand">Stagehand</option>
                 <option value="general">General</option>
             </select>
+            </div>
             </div>
             <div style="padding-bottom: 30px">
                 <button type="submit" class="button is-white is-centered" id="submit">Search</button>
