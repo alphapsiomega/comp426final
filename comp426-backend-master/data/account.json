@@ -267,13 +267,13 @@
         "grade": "Junior"
       }
     },
-<<<<<<< HEAD
+
     "nickg": {
       "passwordHash": "$2a$10$lN72AO/YnQBHnNCWKmXN9OmITrlMWPchugOqs2RdaMDCnoWzxm4xu",
       "data": {
         "fname": "Nick",
         "lname": "G"
-=======
+      },
     "rapunzel": {
       "passwordHash": "$2a$10$tXLZnb4L2YnfqZQnegcpJOvflUvin2gzDJlP2Gjb/3hptCVu8qifa",
       "data": {
@@ -336,8 +336,8 @@
           "isStagehand": false
         },
         "grade": "Freshman"
->>>>>>> 75bc5093a60637067d17c4bb9fad41ccac048d17
       }
     }
   }
+}
 }

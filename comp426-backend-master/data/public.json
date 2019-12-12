@@ -23,9 +23,7 @@
         "isMember": true
       }
     },
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
+
     "userrapunzel": {
       "name": "rapunzel",
       "pass": "hair",
@@ -51,19 +49,16 @@
         "fname": "baybee",
         "lname": "baybee",
         "isMember": true
-=======
->>>>>>> 75bc5093a60637067d17c4bb9fad41ccac048d17
+      },
     "usernickg": {
       "name": "nickg",
       "pass": "gross",
       "data": {
         "fname": "Nick",
         "lname": "G"
-<<<<<<< HEAD
-=======
->>>>>>> 1b99f7663f54b99caa90aaac1a659e6f7ca8d8ce
->>>>>>> 75bc5093a60637067d17c4bb9fad41ccac048d17
+
       }
     }
+  }
   }
 }
