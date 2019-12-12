@@ -273,6 +273,26 @@
         "fname": "Nick",
         "lname": "G"
       }
+    },
+    "jaka": {
+      "passwordHash": "$2a$10$64GoKy7trtKUUiayJbFlcOdqq7YhCNAkEM4XuXq2XX7Tp8OCgcQb2",
+      "data": {
+        "fname": "Jak",
+        "lname": "A",
+        "isMember": false,
+        "isDirector": true,
+        "isProducer": false,
+        "isStageManager": false,
+        "isCostumer": false,
+        "isSetDesigner": false,
+        "isLighting": false,
+        "isSound": false,
+        "isWriter": false,
+        "isExec": false,
+        "isProps": false,
+        "isStagehand": false,
+        "grade": "Freshman"
+      }
     }
   }
 }

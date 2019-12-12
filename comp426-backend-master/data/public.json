@@ -1,14 +1,20 @@
 {
   "posts": {
-    "Inneedofacooldude": {
+    "makinganewposthere": {
       "type": "post",
-      "body": "In need of a cool dude!",
+      "body": "making a new post here!",
       "first": "ljenloe",
       "last": "renis"
     },
-    "BeaandMichaelfeelfreetopostthingsHere": {
+    "Gotridofthestupidones": {
       "type": "post",
-      "body": "Bea and Michael feel free to post things Here",
+      "body": "Got rid of the stupid ones",
+      "first": "ljenloe",
+      "last": "renis"
+    },
+    "Onlyweremain": {
+      "type": "post",
+      "body": "Only we remain",
       "first": "ljenloe",
       "last": "renis"
     }
@@ -29,6 +35,15 @@
       "data": {
         "fname": "Nick",
         "lname": "G"
+      }
+    },
+    "userjaka": {
+      "name": "jaka",
+      "pass": "test",
+      "data": {
+        "fname": "Jak",
+        "lname": "A",
+        "isMember": false
       }
     }
   }
