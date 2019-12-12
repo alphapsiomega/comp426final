@@ -31,6 +31,19 @@ export async function renderPage() {
 
 }
 
+export async function handlePostBoxClick(event) {
+
+    event.preventDefault;
+    let r = `<div id="textype">
+    <textarea class="postText"></textarea>
+    </div>
+    <button type="submit" class="button is-black">Post</button>`
+    
+
+    $('#postBox').replaceWith(r);
+
+}
+
 export async function handleWelcomeButtonPress(event) {
 
   console.log("Welcome, " + decode.data.fname);
@@ -45,8 +58,19 @@ export async function handleWelcomeButtonPress(event) {
 
         <div class="is-top-bar">
 
+            <div class="is-post-button" id="postBox">
+                Click here to post!
+            </div>
+
             <form>
-            <select>
+            
+            <div class="field">
+                            <div class="control" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
+                                    <input class="input is-rounded" type="text" placeholder="Search">
+                            </div>
+                </div>
+                <div style="padding-bottom: 20px">
+                <select>
                 <option value="any">Anything</option>
                 <option value="actors">Acting</option>
                 <option value="directors">Directing</option>
@@ -63,11 +87,7 @@ export async function handleWelcomeButtonPress(event) {
                 <option value="stagehand">Stagehand</option>
                 <option value="general">General</option>
             </select>
-            <div class="field">
-                            <div class="control" style="padding: 20px">
-                                    <input class="input is-rounded" type="text" placeholder="Search">
-                            </div>
-                </div>
+            </div>
             <div style="padding-bottom: 30px">
                 <button type="submit" class="button is-white is-centered" id="submit">Search</button>
             </div>
@@ -154,6 +174,7 @@ export async function handleWelcomeButtonPress(event) {
     }
     r+=`</div>`
 
+    $root.on('click', "#postBox", handlePostBoxClick);
     $root.on('click', "#request", handleRequestButtonPress);
     $root.on('click', "#posts", handlePostsTabClick);
 
@@ -175,9 +196,20 @@ export async function handlePostsTabClick(event) {
 
         <div class="is-top-bar">
 
+            <div class="is-post-button" id="postBox">
+                Click here to post!
+            </div>
+
             <form>
-            <select>
-                <option value="any">Any</option>
+            
+            <div class="field">
+                            <div class="control" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
+                                    <input class="input is-rounded" type="text" placeholder="Search">
+                            </div>
+                </div>
+                <div style="padding-bottom: 20px">
+                <select>
+                <option value="any">Anything</option>
                 <option value="actors">Acting</option>
                 <option value="directors">Directing</option>
                 <option value="producers">Producing</option>
@@ -193,11 +225,7 @@ export async function handlePostsTabClick(event) {
                 <option value="stagehand">Stagehand</option>
                 <option value="general">General</option>
             </select>
-            <div class="field">
-                            <div class="control" style="padding: 20px">
-                                    <input class="input is-rounded" type="text" placeholder="Search">
-                            </div>
-                </div>
+            </div>
             <div style="padding-bottom: 30px">
                 <button type="submit" class="button is-white is-centered" id="submit">Search</button>
             </div>
@@ -249,9 +277,20 @@ else {
 
         <div class="is-top-bar">
 
+            <div class="is-post-button" id="postBox">
+                Click here to post!
+            </div>
+
             <form>
-            <select>
-                <option value="any">Any</option>
+            
+            <div class="field">
+                            <div class="control" style="padding-top: 20px; padding-left: 20px; padding-right: 20px;">
+                                    <input class="input is-rounded" type="text" placeholder="Search">
+                            </div>
+                </div>
+                <div style="padding-bottom: 20px">
+                <select>
+                <option value="any">Anything</option>
                 <option value="actors">Acting</option>
                 <option value="directors">Directing</option>
                 <option value="producers">Producing</option>
@@ -267,11 +306,7 @@ else {
                 <option value="stagehand">Stagehand</option>
                 <option value="general">General</option>
             </select>
-            <div class="field">
-                            <div class="control" style="padding: 20px">
-                                    <input class="input is-rounded" type="text" placeholder="Search">
-                            </div>
-                </div>
+            </div>
             <div style="padding-bottom: 30px">
                 <button type="submit" class="button is-white is-centered" id="submit">Search</button>
             </div>
